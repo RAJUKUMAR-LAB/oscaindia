@@ -1,0 +1,1093 @@
+[
+  {
+    "order_id": "OSCA-ORD-20261107-6933",
+    "invoice_id": "OSCA-INV-20261107-C2EA",
+    "created_at": "2026-11-07T21:56:56.323616",
+    "created_date_str": "07 Nov 2026, 09:56 PM",
+    "customer": {
+      "name": "Rohan Sharma",
+      "phone": "+916200177076",
+      "email": "rohan@example.com",
+      "brand": "OSCA Brand Test"
+    },
+    "items": [
+      {
+        "id": "poster-insta-single",
+        "title": "Instagram / FB High-Impact Creative",
+        "category_name": "Social Media Posters",
+        "price": 299,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 598,
+    "discount": 0,
+    "tax": 0,
+    "total": 598,
+    "status": "Pending Confirmation",
+    "payment_method": "WhatsApp / Digital",
+    "payment_status": "Pending Confirmation",
+    "official_phone": "6200177076"
+  },
+  {
+    "order_id": "OSCA-ORD-20261107-5453",
+    "invoice_id": "OSCA-INV-20261107-22F4",
+    "created_at": "2026-11-07T21:45:33.007492",
+    "created_date_str": "07 Nov 2026, 09:45 PM",
+    "customer": {
+      "name": "Rohan Sharma",
+      "phone": "+916200177076",
+      "email": "rohan@example.com",
+      "brand": "OSCA Brand Test"
+    },
+    "items": [
+      {
+        "id": "poster-insta-single",
+        "title": "Instagram / FB High-Impact Creative",
+        "category_name": "Social Media Posters",
+        "price": 299,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 598,
+    "discount": 0,
+    "tax": 0,
+    "total": 598,
+    "status": "Pending Confirmation",
+    "payment_method": "WhatsApp / Digital",
+    "payment_status": "Pending Confirmation",
+    "official_phone": "6200177076"
+  },
+  {
+    "order_id": "OSCA-ORD-20261107-15E4",
+    "invoice_id": "OSCA-INV-20261107-3D67",
+    "created_at": "2026-11-07T21:44:36.977109",
+    "created_date_str": "07 Nov 2026, 09:44 PM",
+    "customer": {
+      "name": "Rohan Sharma",
+      "phone": "+916200177076",
+      "email": "rohan@example.com",
+      "brand": "OSCA Brand Test"
+    },
+    "items": [
+      {
+        "id": "poster-insta-single",
+        "title": "Instagram / FB High-Impact Creative",
+        "category_name": "Social Media Posters",
+        "price": 299,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 598,
+    "discount": 0,
+    "tax": 0,
+    "total": 598,
+    "status": "Pending Confirmation",
+    "payment_method": "WhatsApp / Digital",
+    "payment_status": "Pending Confirmation",
+    "official_phone": "6200177076"
+  },
+  {
+    "order_id": "OSCA-ORD-20261107-FA3F",
+    "invoice_id": "OSCA-INV-20261107-5853",
+    "created_at": "2026-11-07T21:42:39.354203",
+    "created_date_str": "07 Nov 2026, 09:42 PM",
+    "customer": {
+      "name": "Rohan Sharma",
+      "phone": "+916200177076",
+      "email": "rohan@example.com",
+      "brand": "OSCA Brand Test"
+    },
+    "items": [
+      {
+        "id": "poster-insta-single",
+        "title": "Instagram / FB High-Impact Creative",
+        "category_name": "Social Media Posters",
+        "price": 299,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 598,
+    "discount": 0,
+    "tax": 0,
+    "total": 598,
+    "status": "Pending Confirmation",
+    "payment_method": "WhatsApp / Digital",
+    "payment_status": "Pending Confirmation",
+    "official_phone": "6200177076"
+  },
+  {
+    "order_id": "OSCA-ORD-20261107-D416",
+    "invoice_id": "OSCA-INV-20261107-6CFA",
+    "created_at": "2026-11-07T21:33:02.535452",
+    "created_date_str": "07 Nov 2026, 09:33 PM",
+    "customer": {
+      "name": "Rohan Sharma",
+      "phone": "+916200177076",
+      "email": "rohan@example.com",
+      "brand": "OSCA Brand Test"
+    },
+    "items": [
+      {
+        "id": "poster-insta-single",
+        "title": "Instagram / FB High-Impact Creative",
+        "category_name": "Social Media Posters",
+        "price": 299,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 598,
+    "discount": 0,
+    "tax": 0,
+    "total": 598,
+    "status": "Pending Confirmation",
+    "payment_method": "WhatsApp / Digital",
+    "payment_status": "Pending Confirmation",
+    "official_phone": "6200177076"
+  },
+  {
+    "order_id": "OSCA-ORD-20261107-112F",
+    "invoice_id": "OSCA-INV-20261107-FDC1",
+    "created_at": "2026-11-07T21:27:58.087030",
+    "created_date_str": "07 Nov 2026, 09:27 PM",
+    "customer": {
+      "name": "Rohan Sharma",
+      "phone": "+916200177076",
+      "email": "rohan@example.com",
+      "brand": "OSCA Brand Test"
+    },
+    "items": [
+      {
+        "id": "poster-insta-single",
+        "title": "Instagram / FB High-Impact Creative",
+        "category_name": "Social Media Posters",
+        "price": 299,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 598,
+    "discount": 0,
+    "tax": 0,
+    "total": 598,
+    "status": "Pending Confirmation",
+    "payment_method": "WhatsApp / Digital",
+    "payment_status": "Pending Confirmation",
+    "official_phone": "6200177076"
+  },
+  {
+    "order_id": "OSCA-ORD-20261107-CC0C",
+    "invoice_id": "OSCA-INV-20261107-D355",
+    "created_at": "2026-11-07T21:24:29.975282",
+    "created_date_str": "07 Nov 2026, 09:24 PM",
+    "customer": {
+      "name": "Rohan Sharma",
+      "phone": "+916200177076",
+      "email": "rohan@example.com",
+      "brand": "OSCA Brand Test"
+    },
+    "items": [
+      {
+        "id": "poster-insta-single",
+        "title": "Instagram / FB High-Impact Creative",
+        "category_name": "Social Media Posters",
+        "price": 299,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 598,
+    "discount": 0,
+    "tax": 0,
+    "total": 598,
+    "status": "Pending Confirmation",
+    "payment_method": "WhatsApp / Digital",
+    "payment_status": "Pending Confirmation",
+    "official_phone": "6200177076"
+  },
+  {
+    "order_id": "OSCA-ORD-20261107-D734",
+    "invoice_id": "OSCA-INV-20261107-CDE8",
+    "created_at": "2026-11-07T21:19:46.112889",
+    "created_date_str": "07 Nov 2026, 09:19 PM",
+    "customer": {
+      "name": "Rohan Sharma",
+      "phone": "+916200177076",
+      "email": "rohan@example.com",
+      "brand": "OSCA Brand Test"
+    },
+    "items": [
+      {
+        "id": "poster-insta-single",
+        "title": "Instagram / FB High-Impact Creative",
+        "category_name": "Social Media Posters",
+        "price": 299,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 598,
+    "discount": 0,
+    "tax": 0,
+    "total": 598,
+    "status": "Pending Confirmation",
+    "payment_method": "WhatsApp / Digital",
+    "payment_status": "Pending Confirmation",
+    "official_phone": "6200177076"
+  },
+  {
+    "order_id": "OSCA-ORD-20261107-2A6F",
+    "invoice_id": "OSCA-INV-20261107-3720",
+    "created_at": "2026-11-07T21:19:00.276824",
+    "created_date_str": "07 Nov 2026, 09:19 PM",
+    "customer": {
+      "name": "Rohan Sharma",
+      "phone": "+916200177076",
+      "email": "rohan@example.com",
+      "brand": "OSCA Brand Test"
+    },
+    "items": [
+      {
+        "id": "poster-insta-single",
+        "title": "Instagram / FB High-Impact Creative",
+        "category_name": "Social Media Posters",
+        "price": 299,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 598,
+    "discount": 0,
+    "tax": 0,
+    "total": 598,
+    "status": "Pending Confirmation",
+    "payment_method": "WhatsApp / Digital",
+    "payment_status": "Pending Confirmation",
+    "official_phone": "6200177076"
+  },
+  {
+    "order_id": "OSCA-ORD-20261107-C835",
+    "invoice_id": "OSCA-INV-20261107-3822",
+    "created_at": "2026-11-07T21:06:39.927726",
+    "created_date_str": "07 Nov 2026, 09:06 PM",
+    "customer": {
+      "name": "Rohan Sharma",
+      "phone": "+916200177076",
+      "email": "rohan@example.com",
+      "brand": "OSCA Brand Test"
+    },
+    "items": [
+      {
+        "id": "poster-insta-single",
+        "title": "Instagram / FB High-Impact Creative",
+        "category_name": "Social Media Posters",
+        "price": 299,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 598,
+    "discount": 0,
+    "tax": 0,
+    "total": 598,
+    "status": "Pending Confirmation",
+    "payment_method": "UPI / WhatsApp",
+    "upi_id": "6200177076@upi",
+    "official_phone": "6200177076"
+  },
+  {
+    "order_id": "OSCA-ORD-20261107-DD6B",
+    "invoice_id": "OSCA-INV-20261107-4E10",
+    "created_at": "2026-11-07T20:59:07.554408",
+    "created_date_str": "07 Nov 2026, 08:59 PM",
+    "customer": {
+      "name": "Rohan Sharma",
+      "phone": "+916200177076",
+      "email": "rohan@example.com",
+      "brand": "OSCA Brand Test"
+    },
+    "items": [
+      {
+        "id": "poster-insta-single",
+        "title": "Instagram / FB High-Impact Creative",
+        "category_name": "Social Media Posters",
+        "price": 299,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 598,
+    "discount": 0,
+    "tax": 0,
+    "total": 598,
+    "status": "Pending Confirmation",
+    "payment_method": "UPI / WhatsApp",
+    "upi_id": "6200177076@upi",
+    "official_phone": "6200177076"
+  },
+  {
+    "order_id": "OSCA-ORD-20261107-57EB",
+    "invoice_id": "OSCA-INV-20261107-8A94",
+    "created_at": "2026-11-07T20:50:42.004896",
+    "created_date_str": "07 Nov 2026, 08:50 PM",
+    "customer": {
+      "name": "Rohan Sharma",
+      "phone": "+916200177076",
+      "email": "rohan@example.com",
+      "brand": "OSCA Brand Test"
+    },
+    "items": [
+      {
+        "id": "poster-insta-single",
+        "title": "Instagram / FB High-Impact Creative",
+        "category_name": "Social Media Posters",
+        "price": 299,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 598,
+    "discount": 0,
+    "tax": 0,
+    "total": 598,
+    "status": "Pending Confirmation",
+    "payment_method": "UPI / WhatsApp",
+    "upi_id": "6200177076@upi",
+    "official_phone": "6200177076"
+  },
+  {
+    "order_id": "OSCA-ORD-20261107-44DA",
+    "invoice_id": "OSCA-INV-20261107-8306",
+    "created_at": "2026-11-07T20:49:53.610709",
+    "created_date_str": "07 Nov 2026, 08:49 PM",
+    "customer": {
+      "name": "Rohan Sharma",
+      "phone": "+916200177076",
+      "email": "rohan@example.com",
+      "brand": "OSCA Brand Test"
+    },
+    "items": [
+      {
+        "id": "poster-insta-single",
+        "title": "Instagram / FB High-Impact Creative",
+        "category_name": "Social Media Posters",
+        "price": 299,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 598,
+    "discount": 0,
+    "tax": 0,
+    "total": 598,
+    "status": "Pending Confirmation",
+    "payment_method": "UPI / WhatsApp",
+    "upi_id": "6200177076@upi",
+    "official_phone": "6200177076"
+  },
+  {
+    "order_id": "OSCA-ORD-20261107-02C6",
+    "invoice_id": "OSCA-INV-20261107-79C8",
+    "created_at": "2026-11-07T20:33:33.933906",
+    "created_date_str": "07 Nov 2026, 08:33 PM",
+    "customer": {
+      "name": "Rohan Sharma",
+      "phone": "+916200177076",
+      "email": "rohan@example.com",
+      "brand": "OSCA Brand Test"
+    },
+    "items": [
+      {
+        "id": "poster-insta-single",
+        "title": "Instagram / FB High-Impact Creative",
+        "category_name": "Social Media Posters",
+        "price": 299,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 598,
+    "discount": 0,
+    "tax": 0,
+    "total": 598,
+    "status": "Pending Confirmation",
+    "payment_method": "UPI / WhatsApp",
+    "upi_id": "6200177076@upi",
+    "official_phone": "6200177076"
+  },
+  {
+    "order_id": "OSCA-ORD-20261107-1FC0",
+    "invoice_id": "OSCA-INV-20261107-51C4",
+    "created_at": "2026-11-07T20:32:32.124444",
+    "created_date_str": "07 Nov 2026, 08:32 PM",
+    "customer": {
+      "name": "Rohan Sharma",
+      "phone": "+916200177076",
+      "email": "rohan@example.com",
+      "brand": "OSCA Brand Test"
+    },
+    "items": [
+      {
+        "id": "poster-insta-single",
+        "title": "Instagram / FB High-Impact Creative",
+        "category_name": "Social Media Posters",
+        "price": 299,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 598,
+    "discount": 0,
+    "tax": 0,
+    "total": 598,
+    "status": "Pending Confirmation",
+    "payment_method": "UPI / WhatsApp",
+    "upi_id": "6200177076@upi",
+    "official_phone": "6200177076"
+  },
+  {
+    "order_id": "OSCA-ORD-20261107-29E1",
+    "invoice_id": "OSCA-INV-20261107-7E12",
+    "created_at": "2026-11-07T18:40:55.207335",
+    "created_date_str": "07 Nov 2026, 06:40 PM",
+    "customer": {
+      "name": "Rohan Sharma",
+      "phone": "+916200177076",
+      "email": "rohan@example.com",
+      "brand": "OSCA Brand Test"
+    },
+    "items": [
+      {
+        "id": "poster-insta-single",
+        "title": "Instagram / FB High-Impact Creative",
+        "category_name": "Social Media Posters",
+        "price": 299,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 598,
+    "discount": 0,
+    "tax": 0,
+    "total": 598,
+    "status": "Pending Confirmation",
+    "payment_method": "UPI / WhatsApp",
+    "upi_id": "6200177076@upi",
+    "official_phone": "6200177076"
+  },
+  {
+    "order_id": "OSCA-ORD-20261107-C0EF",
+    "invoice_id": "OSCA-INV-20261107-AE79",
+    "created_at": "2026-11-07T18:34:46.693529",
+    "created_date_str": "07 Nov 2026, 06:34 PM",
+    "customer": {
+      "name": "Rohan Sharma",
+      "phone": "+916200177076",
+      "email": "rohan@example.com",
+      "brand": "OSCA Brand Test"
+    },
+    "items": [
+      {
+        "id": "poster-insta-single",
+        "title": "Instagram / FB High-Impact Creative",
+        "category_name": "Social Media Posters",
+        "price": 299,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 598,
+    "discount": 0,
+    "tax": 0,
+    "total": 598,
+    "status": "Pending Confirmation",
+    "payment_method": "UPI / WhatsApp",
+    "upi_id": "6200177076@upi",
+    "official_phone": "6200177076"
+  },
+  {
+    "order_id": "OSCA-ORD-20261107-C9DE",
+    "invoice_id": "OSCA-INV-20261107-BA2B",
+    "created_at": "2026-11-07T18:24:46.986886",
+    "created_date_str": "07 Nov 2026, 06:24 PM",
+    "customer": {
+      "name": "Rohan Sharma",
+      "phone": "+916200177076",
+      "email": "rohan@example.com",
+      "brand": "OSCA Brand Test"
+    },
+    "items": [
+      {
+        "id": "poster-insta-single",
+        "title": "Instagram / FB High-Impact Creative",
+        "category_name": "Social Media Posters",
+        "price": 299,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 598,
+    "discount": 0,
+    "tax": 0,
+    "total": 598,
+    "status": "Pending Confirmation",
+    "payment_method": "UPI / WhatsApp",
+    "upi_id": "6200177076@upi",
+    "official_phone": "6200177076"
+  },
+  {
+    "order_id": "OSCA-ORD-20261107-173B",
+    "invoice_id": "OSCA-INV-20261107-33D2",
+    "created_at": "2026-11-07T18:24:33.733553",
+    "created_date_str": "07 Nov 2026, 06:24 PM",
+    "customer": {
+      "name": "Rohan Sharma",
+      "phone": "+916200177076",
+      "email": "rohan@example.com",
+      "brand": "OSCA Brand Test"
+    },
+    "items": [
+      {
+        "id": "poster-insta-single",
+        "title": "Instagram / FB High-Impact Creative",
+        "category_name": "Social Media Posters",
+        "price": 299,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 598,
+    "discount": 0,
+    "tax": 0,
+    "total": 598,
+    "status": "Pending Confirmation",
+    "payment_method": "UPI / WhatsApp",
+    "upi_id": "6200177076@upi",
+    "official_phone": "6200177076"
+  },
+  {
+    "order_id": "OSCA-ORD-20261107-4809",
+    "invoice_id": "OSCA-INV-20261107-12C1",
+    "created_at": "2026-11-07T18:17:32.912127",
+    "created_date_str": "07 Nov 2026, 06:17 PM",
+    "customer": {
+      "name": "Rohan Sharma",
+      "phone": "+916200177076",
+      "email": "rohan@example.com",
+      "brand": "OSCA Brand Test"
+    },
+    "items": [
+      {
+        "id": "poster-insta-single",
+        "title": "Instagram / FB High-Impact Creative",
+        "category_name": "Social Media Posters",
+        "price": 299,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 598,
+    "discount": 0,
+    "tax": 0,
+    "total": 598,
+    "status": "Pending Confirmation",
+    "payment_method": "UPI / WhatsApp",
+    "upi_id": "6200177076@upi",
+    "official_phone": "6200177076"
+  },
+  {
+    "order_id": "OSCA-ORD-20261107-E78F",
+    "invoice_id": "OSCA-INV-20261107-0B80",
+    "created_at": "2026-11-07T18:15:21.533771",
+    "created_date_str": "07 Nov 2026, 06:15 PM",
+    "customer": {
+      "name": "Rohan Sharma",
+      "phone": "+916200177076",
+      "email": "rohan@example.com",
+      "brand": "OSCA Brand Test"
+    },
+    "items": [
+      {
+        "id": "poster-insta-single",
+        "title": "Instagram / FB High-Impact Creative",
+        "category_name": "Social Media Posters",
+        "price": 299,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 598,
+    "discount": 0,
+    "tax": 0,
+    "total": 598,
+    "status": "Pending Confirmation",
+    "payment_method": "UPI / WhatsApp",
+    "upi_id": "6200177076@upi",
+    "official_phone": "6200177076"
+  },
+  {
+    "order_id": "OSCA-ORD-20261107-9F4D",
+    "invoice_id": "OSCA-INV-20261107-287D",
+    "created_at": "2026-11-07T18:14:48.484810",
+    "created_date_str": "07 Nov 2026, 06:14 PM",
+    "customer": {
+      "name": "Rohan Sharma",
+      "phone": "+916200177076",
+      "email": "rohan@example.com",
+      "brand": "OSCA Brand Test"
+    },
+    "items": [
+      {
+        "id": "poster-insta-single",
+        "title": "Instagram / FB High-Impact Creative",
+        "category_name": "Social Media Posters",
+        "price": 299,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 598,
+    "discount": 0,
+    "tax": 0,
+    "total": 598,
+    "status": "Pending Confirmation",
+    "payment_method": "UPI / WhatsApp",
+    "upi_id": "6200177076@upi",
+    "official_phone": "6200177076"
+  },
+  {
+    "order_id": "OSCA-ORD-20261107-5B8B",
+    "invoice_id": "OSCA-INV-20261107-907A",
+    "created_at": "2026-11-07T18:08:16.447548",
+    "created_date_str": "07 Nov 2026, 06:08 PM",
+    "customer": {
+      "name": "Rohan Sharma",
+      "phone": "+916200177076",
+      "email": "rohan@example.com",
+      "brand": "OSCA Brand Test"
+    },
+    "items": [
+      {
+        "id": "poster-insta-single",
+        "title": "Instagram / FB High-Impact Creative",
+        "category_name": "Social Media Posters",
+        "price": 299,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 598,
+    "discount": 0,
+    "tax": 0,
+    "total": 598,
+    "status": "Pending Confirmation",
+    "payment_method": "UPI / WhatsApp",
+    "upi_id": "6200177076@upi",
+    "official_phone": "6200177076"
+  },
+  {
+    "order_id": "OSCA-ORD-20261107-98FD",
+    "invoice_id": "OSCA-INV-20261107-6B89",
+    "created_at": "2026-11-07T17:57:43.193825",
+    "created_date_str": "07 Nov 2026, 05:57 PM",
+    "customer": {
+      "name": "Rohan Sharma",
+      "phone": "+916200177076",
+      "email": "rohan@example.com",
+      "brand": "OSCA Brand Test"
+    },
+    "items": [
+      {
+        "id": "poster-insta-single",
+        "title": "Instagram / FB High-Impact Creative",
+        "category_name": "Social Media Posters",
+        "price": 299,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 598,
+    "discount": 0,
+    "tax": 0,
+    "total": 598,
+    "status": "Pending Confirmation",
+    "payment_method": "UPI / WhatsApp",
+    "upi_id": "6200177076@upi",
+    "official_phone": "6200177076"
+  },
+  {
+    "order_id": "OSCA-ORD-20261107-5975",
+    "invoice_id": "OSCA-INV-20261107-77C9",
+    "created_at": "2026-11-07T17:55:17.270616",
+    "created_date_str": "07 Nov 2026, 05:55 PM",
+    "customer": {
+      "name": "Rohan Sharma",
+      "phone": "+916200177076",
+      "email": "rohan@example.com",
+      "brand": "OSCA Brand Test"
+    },
+    "items": [
+      {
+        "id": "poster-insta-single",
+        "title": "Instagram / FB High-Impact Creative",
+        "category_name": "Social Media Posters",
+        "price": 299,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 598,
+    "discount": 0,
+    "tax": 0,
+    "total": 598,
+    "status": "Pending Confirmation",
+    "payment_method": "UPI / WhatsApp",
+    "upi_id": "6200177076@upi",
+    "official_phone": "6200177076"
+  },
+  {
+    "order_id": "OSCA-ORD-20261107-5DA3",
+    "invoice_id": "OSCA-INV-20261107-6E9F",
+    "created_at": "2026-11-07T17:41:40.562673",
+    "created_date_str": "07 Nov 2026, 05:41 PM",
+    "customer": {
+      "name": "Rohan Sharma",
+      "phone": "+916200177076",
+      "email": "rohan@example.com",
+      "brand": "OSCA Brand Test"
+    },
+    "items": [
+      {
+        "id": "poster-insta-single",
+        "title": "Instagram / FB High-Impact Creative",
+        "category_name": "Social Media Posters",
+        "price": 299,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 598,
+    "discount": 0,
+    "tax": 0,
+    "total": 598,
+    "status": "Pending Confirmation",
+    "payment_method": "UPI / WhatsApp",
+    "upi_id": "6200177076@upi",
+    "official_phone": "6200177076"
+  },
+  {
+    "order_id": "OSCA-ORD-20261107-5C34",
+    "invoice_id": "OSCA-INV-20261107-6411",
+    "created_at": "2026-11-07T17:41:13.258152",
+    "created_date_str": "07 Nov 2026, 05:41 PM",
+    "customer": {
+      "name": "Rohan Sharma",
+      "phone": "+916200177076",
+      "email": "rohan@example.com",
+      "brand": "OSCA Brand Test"
+    },
+    "items": [
+      {
+        "id": "poster-insta-single",
+        "title": "Instagram / FB High-Impact Creative",
+        "category_name": "Social Media Posters",
+        "price": 299,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 598,
+    "discount": 0,
+    "tax": 0,
+    "total": 598,
+    "status": "Pending Confirmation",
+    "payment_method": "UPI / WhatsApp",
+    "upi_id": "6200177076@upi",
+    "official_phone": "6200177076"
+  },
+  {
+    "order_id": "OSCA-ORD-20261107-799F",
+    "invoice_id": "OSCA-INV-20261107-296A",
+    "created_at": "2026-11-07T17:36:15.380686",
+    "created_date_str": "07 Nov 2026, 05:36 PM",
+    "customer": {
+      "name": "Rohan Sharma",
+      "phone": "+916200177076",
+      "email": "rohan@example.com",
+      "brand": "OSCA Brand Test"
+    },
+    "items": [
+      {
+        "id": "poster-insta-single",
+        "title": "Instagram / FB High-Impact Creative",
+        "category_name": "Social Media Posters",
+        "price": 299,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 598,
+    "discount": 0,
+    "tax": 0,
+    "total": 598,
+    "status": "Pending Confirmation",
+    "payment_method": "UPI / WhatsApp",
+    "upi_id": "6200177076@upi",
+    "official_phone": "6200177076"
+  },
+  {
+    "order_id": "OSCA-ORD-20261107-C088",
+    "invoice_id": "OSCA-INV-20261107-3B38",
+    "created_at": "2026-11-07T17:35:56.271977",
+    "created_date_str": "07 Nov 2026, 05:35 PM",
+    "customer": {
+      "name": "Rohan Sharma",
+      "phone": "+916200177076",
+      "email": "rohan@example.com",
+      "brand": "OSCA Brand Test"
+    },
+    "items": [
+      {
+        "id": "poster-insta-single",
+        "title": "Instagram / FB High-Impact Creative",
+        "category_name": "Social Media Posters",
+        "price": 299,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 598,
+    "discount": 0,
+    "tax": 0,
+    "total": 598,
+    "status": "Pending Confirmation",
+    "payment_method": "UPI / WhatsApp",
+    "upi_id": "6200177076@upi",
+    "official_phone": "6200177076"
+  },
+  {
+    "order_id": "OSCA-ORD-20261107-78EA",
+    "invoice_id": "OSCA-INV-20261107-134F",
+    "created_at": "2026-11-07T17:30:26.007158",
+    "created_date_str": "07 Nov 2026, 05:30 PM",
+    "customer": {
+      "name": "Rohan Sharma",
+      "phone": "+916200177076",
+      "email": "rohan@example.com",
+      "brand": "OSCA Brand Test"
+    },
+    "items": [
+      {
+        "id": "poster-insta-single",
+        "title": "Instagram / FB High-Impact Creative",
+        "category_name": "Social Media Posters",
+        "price": 299,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 598,
+    "discount": 0,
+    "tax": 0,
+    "total": 598,
+    "status": "Pending Confirmation",
+    "payment_method": "UPI / WhatsApp",
+    "upi_id": "6200177076@upi",
+    "official_phone": "6200177076"
+  },
+  {
+    "order_id": "OSCA-ORD-20261107-8C6B",
+    "invoice_id": "OSCA-INV-20261107-D066",
+    "created_at": "2026-11-07T17:29:45.619721",
+    "created_date_str": "07 Nov 2026, 05:29 PM",
+    "customer": {
+      "name": "Rohan Sharma",
+      "phone": "+916200177076",
+      "email": "rohan@example.com",
+      "brand": "OSCA Brand Test"
+    },
+    "items": [
+      {
+        "id": "poster-insta-single",
+        "title": "Instagram / FB High-Impact Creative",
+        "category_name": "Social Media Posters",
+        "price": 299,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 598,
+    "discount": 0,
+    "tax": 0,
+    "total": 598,
+    "status": "Pending Confirmation",
+    "payment_method": "UPI / WhatsApp",
+    "upi_id": "6200177076@upi",
+    "official_phone": "6200177076"
+  },
+  {
+    "order_id": "OSCA-ORD-20261107-FD48",
+    "invoice_id": "OSCA-INV-20261107-3D99",
+    "created_at": "2026-11-07T17:22:25.460442",
+    "created_date_str": "07 Nov 2026, 05:22 PM",
+    "customer": {
+      "name": "Rohan Sharma",
+      "phone": "+916200177076",
+      "email": "rohan@example.com",
+      "brand": "OSCA Brand Test"
+    },
+    "items": [
+      {
+        "id": "poster-insta-single",
+        "title": "Instagram / FB High-Impact Creative",
+        "category_name": "Social Media Posters",
+        "price": 299,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 598,
+    "discount": 0,
+    "tax": 0,
+    "total": 598,
+    "status": "Pending Confirmation",
+    "payment_method": "UPI / WhatsApp",
+    "upi_id": "6200177076@upi",
+    "official_phone": "6200177076"
+  },
+  {
+    "order_id": "OSCA-ORD-20261107-FD89",
+    "invoice_id": "OSCA-INV-20261107-AA62",
+    "created_at": "2026-11-07T17:22:14.882716",
+    "created_date_str": "07 Nov 2026, 05:22 PM",
+    "customer": {
+      "name": "Rohan Sharma",
+      "phone": "+916200177076",
+      "email": "rohan@example.com",
+      "brand": "OSCA Brand Test"
+    },
+    "items": [
+      {
+        "id": "poster-insta-single",
+        "title": "Instagram / FB High-Impact Creative",
+        "category_name": "Social Media Posters",
+        "price": 299,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 598,
+    "discount": 0,
+    "tax": 0,
+    "total": 598,
+    "status": "Pending Confirmation",
+    "payment_method": "UPI / WhatsApp",
+    "upi_id": "6200177076@upi",
+    "official_phone": "6200177076"
+  },
+  {
+    "order_id": "OSCA-ORD-20261107-BE94",
+    "invoice_id": "OSCA-INV-20261107-A017",
+    "created_at": "2026-11-07T17:21:56.603145",
+    "created_date_str": "07 Nov 2026, 05:21 PM",
+    "customer": {
+      "name": "Rohan Sharma",
+      "phone": "+916200177076",
+      "email": "rohan@example.com",
+      "brand": "OSCA Brand Test"
+    },
+    "items": [
+      {
+        "id": "poster-insta-single",
+        "title": "Instagram / FB High-Impact Creative",
+        "category_name": "Social Media Posters",
+        "price": 299,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 598,
+    "discount": 0,
+    "tax": 0,
+    "total": 598,
+    "status": "Pending Confirmation",
+    "payment_method": "UPI / WhatsApp",
+    "upi_id": "6200177076@upi",
+    "official_phone": "6200177076"
+  },
+  {
+    "order_id": "OSCA-ORD-20261107-3680",
+    "invoice_id": "OSCA-INV-20261107-E511",
+    "created_at": "2026-11-07T17:01:17.565039",
+    "created_date_str": "07 Nov 2026, 05:01 PM",
+    "customer": {
+      "email": "vikram@aditya.in",
+      "brand": "Aditya Media",
+      "name": "Vikram Aditya",
+      "phone": "6200177076",
+      "notes": "Urgent YouTube Thumbnail for Podcast"
+    },
+    "items": [
+      {
+        "id": "thumb-viral-click",
+        "quantity": 2,
+        "price": 349,
+        "category": "thumbnails",
+        "title": "Viral High-CTR YouTube Thumbnail",
+        "category_name": "YouTube & Video Thumbnails"
+      }
+    ],
+    "subtotal": 698,
+    "discount": 0,
+    "tax": 0,
+    "total": 698,
+    "status": "Pending Confirmation",
+    "payment_method": "UPI / WhatsApp",
+    "upi_id": "6200177076@upi",
+    "official_phone": "6200177076"
+  },
+  {
+    "order_id": "OSCA-ORD-20261107-31CB",
+    "invoice_id": "OSCA-INV-20261107-CEF5",
+    "created_at": "2026-11-07T16:28:25.462111",
+    "created_date_str": "07 Nov 2026, 04:28 PM",
+    "customer": {
+      "name": "Rishabh Kumar",
+      "phone": "07631089503",
+      "brand": "Brand / Channel",
+      "email": "client@osca.studio",
+      "notes": "Standard high quality design"
+    },
+    "items": [
+      {
+        "id": "poster-linkedin-header",
+        "title": "LinkedIn & Twitter Executive Banner",
+        "category": "social",
+        "category_name": "Social Media Posters",
+        "price": 499,
+        "delivery_time": "24 Hours",
+        "quantity": 1,
+        "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=700&q=80"
+      },
+      {
+        "id": "thumb-viral-click",
+        "title": "Viral High-CTR YouTube Thumbnail",
+        "category": "thumbnails",
+        "category_name": "YouTube & Video Thumbnails",
+        "price": 349,
+        "delivery_time": "12-24 Hours",
+        "quantity": 1,
+        "image": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=700&q=80"
+      }
+    ],
+    "subtotal": 848,
+    "discount": 0,
+    "tax": 0,
+    "total": 848,
+    "status": "Pending Confirmation",
+    "payment_method": "UPI (6200177076@upi) / WhatsApp",
+    "upi_id": "6200177076@upi",
+    "official_phone": "6200177076"
+  },
+  {
+    "order_id": "OSCA-ORD-20261107-F06D",
+    "invoice_id": "OSCA-INV-20261107-D541",
+    "created_at": "2026-11-07T16:12:03.687316",
+    "created_date_str": "07 Nov 2026, 04:12 PM",
+    "customer": {
+      "email": "rahul@sharmatech.in",
+      "brand": "Sharma Tech",
+      "name": "Rahul Sharma",
+      "phone": "6200177076",
+      "notes": "Need high CTR thumbnail"
+    },
+    "items": [
+      {
+        "id": "thumb-viral-click",
+        "quantity": 2,
+        "price": 349,
+        "category": "thumbnails",
+        "title": "Viral High-CTR YouTube Thumbnail",
+        "category_name": "YouTube & Video Thumbnails"
+      }
+    ],
+    "subtotal": 698,
+    "discount": 50,
+    "tax": 0,
+    "total": 648,
+    "status": "Pending Confirmation",
+    "payment_method": "UPI / WhatsApp",
+    "upi_id": "6200177076@upi",
+    "official_phone": "6200177076"
+  }
+]

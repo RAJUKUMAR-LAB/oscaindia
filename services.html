@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Graphic Design Services — OSCA INDIA | Posters, Thumbnails & Logos</title>
+  <meta name="description" content="Explore OSCA INDIA's full catalog of graphic design services: Social Media Posters, Viral YouTube Thumbnails, Minimalist Logos, and Print Media." />
+
+  <!-- Tailwind CSS CDN -->
+  <script>
+    const _origWarn = console.warn;
+    console.warn = (...args) => {
+      if (args[0] && typeof args[0] === "string" && args[0].includes("cdn.tailwindcss.com")) return;
+      _origWarn.apply(console, args);
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              cyan: '#00f0ff',
+              purple: '#8b5cf6',
+              deep: '#080c14',
+              surface: '#0f1626',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & Font Awesome 6 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- jsPDF & AutoTable -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
+
+  <!-- Canvas Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <!-- Immediate Theme Loader (Zero Flicker) -->
+  <script>
+    (function () {
+      try {
+        const params = new URLSearchParams(window.location.search);
+        const queryTheme = params.get("theme");
+        if (queryTheme === "light" || queryTheme === "dark") {
+          localStorage.setItem("osca_theme", queryTheme);
+        }
+        const theme = localStorage.getItem("osca_theme") || "dark";
+        if (theme === "light") document.documentElement.classList.add("light");
+        else document.documentElement.classList.add("dark");
+      } catch (e) {}
+    })();
+  </script>
+</head>
+
+<body class="bg-[#080c14] text-slate-100 antialiased selection:bg-cyan-500 selection:text-black relative min-h-screen flex flex-col justify-between pb-36 xl:pb-0">
+
+  <!-- Ambient Background Lighting (Enclosed to prevent horizontal scroll) -->
+  <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+    <div class="ambient-glow-1"></div>
+    <div class="ambient-glow-2"></div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container"></div>
+
+  <!-- ======================================================== -->
+  <!-- NAVIGATION BAR                                           -->
+  <!-- ======================================================== -->
+  <header class="sticky top-0 z-50 glass-clean border-b border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-cyan-400 via-sky-500 to-purple-600 p-[2px] shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+          <div class="logo-box-inner w-full h-full bg-[#080c14] rounded-[10px] flex items-center justify-center">
+            <svg class="w-6 h-6 text-cyan-400" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="32 8" />
+              <path d="M8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12C16 14.2091 14.2091 16 12 16" stroke="#8b5cf6" stroke-width="2.2" stroke-linecap="round" />
+              <circle cx="12" cy="12" r="2" fill="currentColor" />
+            </svg>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex items-center gap-1.5 sm:gap-2 leading-none">
+            <span class="logo-osca-text text-lg sm:text-2xl font-black font-display tracking-tight text-white">OSCA</span>
+            <span class="px-1.5 sm:px-2 py-0.5 rounded text-[10px] sm:text-[11px] font-extrabold tracking-wider bg-cyan-400/15 text-cyan-400 border border-cyan-400/30">INDIA</span>
+          </div>
+          <span class="text-[9px] sm:text-[10px] uppercase font-bold text-slate-400 tracking-wider block mt-0.5 sm:mt-1">Graphic Studio</span>
+        </div>
+      </a>
+
+      <!-- Individual Pages Navigation Links (Visible on Large Desktops > 12") -->
+      <nav class="hidden xl:flex items-center gap-8 text-sm font-semibold text-slate-300">
+        <a href="index.html" class="hover:text-cyan-400 transition-colors">Home</a>
+        <a href="about.html" class="hover:text-cyan-400 transition-colors">About Us</a>
+        <a href="services.html" class="text-cyan-400 border-b-2 border-cyan-400 pb-1">Services</a>
+        <a href="contact.html" class="hover:text-cyan-400 transition-colors">Contact Us</a>
+      </nav>
+
+      <!-- Right Header Actions (Mode Change & Contact on Mobile/Tablet | Cart on Desktop) -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <!-- Theme Toggle (Mode Change) Button -->
+        <button 
+          type="button" 
+          onclick="toggleTheme()" 
+          class="theme-toggle-btn h-10 px-3 sm:px-3.5 rounded-xl btn-secondary-action flex items-center justify-center gap-2 transition-all text-xs font-semibold"
+          title="Switch Theme"
+          aria-label="Switch Theme"
+        >
+          <i class="theme-icon fa-solid fa-sun text-amber-400 text-sm"></i>
+          <span class="theme-label hidden xl:inline text-slate-300">Light</span>
+        </button>
+
+        <!-- Contact Button (Swapped in place of Cart for Mobile & Tablets up to 12") -->
+        <a 
+          href="contact.html" 
+          class="header-contact-btn flex xl:hidden h-10 px-3 sm:px-3.5 rounded-xl btn-secondary-action items-center justify-center gap-1.5 text-xs font-semibold"
+          title="Contact Studio"
+          aria-label="Contact Studio"
+        >
+          <i class="fa-solid fa-envelope text-cyan-400 text-sm"></i>
+          <span>Contact</span>
+        </a>
+
+        <!-- Cart Button (Visible on Large Desktop Screens > 12") -->
+        <button 
+          class="btn-open-cart relative h-10 px-3.5 sm:px-4 rounded-xl btn-secondary-action hidden xl:flex items-center justify-center gap-2" 
+          title="Open Shopping Cart"
+          aria-label="Shopping Cart"
+        >
+          <i class="fa-solid fa-bag-shopping text-cyan-400 text-sm"></i>
+          <span class="text-xs font-semibold">Cart</span>
+          <span class="cart-count-badge hidden absolute -top-1 -right-1 w-5 h-5 rounded-full bg-cyan-400 text-slate-950 text-[10px] font-black flex items-center justify-center shadow-md">0</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ======================================================== -->
+  <!-- SERVICES HERO                                            -->
+  <!-- ======================================================== -->
+  <main class="flex-grow">
+    <section class="py-16 sm:py-24 relative z-10 border-b border-slate-900/80">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-5">
+        <div class="flex flex-wrap items-center justify-center gap-2">
+          <span class="px-3 py-1 rounded-full text-xs font-bold bg-cyan-400/10 text-cyan-400 border border-cyan-400/20 uppercase tracking-wider">
+            Complete Catalog
+          </span>
+          <a 
+            href="https://share.google/KetARk5s5CUDVXaoO" 
+            target="_blank" 
+            class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-slate-900 border border-slate-700 text-xs font-semibold text-slate-300 hover:border-amber-400 transition-colors"
+          >
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google" class="w-3.5 h-3.5" />
+            <span>4.9 <strong class="text-amber-400">&starf;&starf;&starf;&starf;&starf;</strong> (38+ Google Reviews)</span>
+          </a>
+        </div>
+        <h1 class="text-4xl sm:text-6xl font-black font-display text-white tracking-tight leading-tight">
+          Graphic Design Services <span class="gradient-accent-text">Tailored for Impact.</span>
+        </h1>
+        <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
+          Posters, viral YouTube thumbnails, vector brand logos, and marketing print collaterals. Add any service to your cart and download an instant PDF bill!
+        </p>
+
+        <!-- Direct Actions -->
+        <div class="pt-4 flex flex-wrap items-center justify-center gap-3">
+          <a href="https://wa.me/916200177076?text=Hi%20OSCA%20India%2C%20I%20want%20to%20place%20a%20design%20order." target="_blank" class="btn-whatsapp-action px-6 py-3 rounded-xl text-xs font-bold flex items-center gap-2">
+            <i class="fa-brands fa-whatsapp text-base"></i>
+            <span>Order via WhatsApp</span>
+          </a>
+          <a href="tel:+916200177076" class="btn-secondary-action px-5 py-3 rounded-xl text-xs font-semibold flex items-center gap-2">
+            <i class="fa-solid fa-phone text-cyan-400"></i>
+            <span>Call Now</span>
+          </a>
+        </div>
+
+        <!-- Visible Platform Bar -->
+        <div class="pt-8 flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-xs text-slate-400">
+          <span class="text-slate-500 font-bold uppercase tracking-wider text-[11px]">Core Platforms:</span>
+          <span class="flex items-center gap-1.5 text-pink-400 font-semibold"><i class="fa-brands fa-instagram text-sm"></i> Instagram</span>
+          <span class="flex items-center gap-1.5 text-red-400 font-semibold"><i class="fa-brands fa-youtube text-sm"></i> YouTube</span>
+          <span class="flex items-center gap-1.5 text-blue-400 font-semibold"><i class="fa-brands fa-facebook-f text-sm"></i> Facebook</span>
+          <span class="flex items-center gap-1.5 text-emerald-400 font-semibold"><i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp</span>
+          <span class="flex items-center gap-1.5 text-cyan-400 font-semibold"><i class="fa-brands fa-linkedin-in text-sm"></i> LinkedIn</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Filter & Grid -->
+    <section class="py-16 bg-[#060910] relative z-10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-wrap items-center justify-center gap-2 mb-12">
+          <button data-category="all" class="category-tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-cyan-400 text-slate-950 transition-all">All Services (12)</button>
+          <button data-category="social" class="category-tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-slate-900 text-slate-400 hover:text-white transition-all">Social Media Posters</button>
+          <button data-category="thumbnails" class="category-tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-slate-900 text-slate-400 hover:text-white transition-all">YouTube Thumbnails</button>
+          <button data-category="logos" class="category-tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-slate-900 text-slate-400 hover:text-white transition-all">Logo &amp; Branding</button>
+          <button data-category="print" class="category-tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-slate-900 text-slate-400 hover:text-white transition-all">Commercial &amp; Print</button>
+        </div>
+
+        <!-- Populated by app.js -->
+        <div id="services-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"></div>
+
+      </div>
+    </section>
+
+    <!-- What Every Order Includes -->
+    <section class="py-20 border-t border-slate-900/80 relative z-10">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto space-y-3 mb-12">
+          <span class="text-xs font-bold uppercase tracking-wider text-cyan-400">Guaranteed Standards</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-display text-white">
+            What is Included with Every Single Order
+          </h2>
+          <p class="text-slate-400 text-xs sm:text-sm">
+            Zero hidden fees. Complete peace of mind for creators and corporate marketing departments.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="glass-card p-6 rounded-2xl border border-slate-800 space-y-3">
+            <div class="w-10 h-10 rounded-xl bg-cyan-400/10 text-cyan-400 flex items-center justify-center text-lg">
+              <i class="fa-solid fa-file-image"></i>
+            </div>
+            <h4 class="text-sm font-bold text-white">All Formats Included</h4>
+            <p class="text-xs text-slate-400 leading-relaxed">PNG (Transparent), ultra HD JPG (1080p / 4K), and printable CMYK 300 DPI vector PDFs.</p>
+          </div>
+
+          <div class="glass-card p-6 rounded-2xl border border-slate-800 space-y-3">
+            <div class="w-10 h-10 rounded-xl bg-purple-400/10 text-purple-400 flex items-center justify-center text-lg">
+              <i class="fa-solid fa-arrows-rotate"></i>
+            </div>
+            <h4 class="text-sm font-bold text-white">Free Revisions</h4>
+            <p class="text-xs text-slate-400 leading-relaxed">We adjust typography, color grading, facial expressions, and lighting until it matches your exact vision.</p>
+          </div>
+
+          <div class="glass-card p-6 rounded-2xl border border-slate-800 space-y-3">
+            <div class="w-10 h-10 rounded-xl bg-emerald-400/10 text-emerald-400 flex items-center justify-center text-lg">
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+            <h4 class="text-sm font-bold text-white">24-48h Delivery</h4>
+            <p class="text-xs text-slate-400 leading-relaxed">Receive initial drafts directly on WhatsApp within 24 to 48 hours. Express 12-hour turnaround available.</p>
+          </div>
+
+          <div class="glass-card p-6 rounded-2xl border border-slate-800 space-y-3">
+            <div class="w-10 h-10 rounded-xl bg-amber-400/10 text-amber-400 flex items-center justify-center text-lg">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h4 class="text-sm font-bold text-white">Commercial Rights &amp; Bill</h4>
+            <p class="text-xs text-slate-400 leading-relaxed">Full commercial copyright transfer and instant tax invoice/bill generated in PDF format.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="py-20 bg-[#060910] border-t border-slate-900/80 relative z-10">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+        
+        <div class="text-center space-y-2">
+          <span class="text-xs font-bold uppercase tracking-wider text-cyan-400">Questions &amp; Answers</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-display text-white">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="space-y-4">
+          <div class="glass-card p-5 rounded-2xl border border-slate-800 space-y-1.5">
+            <h4 class="text-sm font-bold text-white flex items-center gap-2">
+              <i class="fa-solid fa-circle-question text-cyan-400 text-xs"></i>
+              How do I get my design files after ordering?
+            </h4>
+            <p class="text-xs text-slate-400 leading-relaxed pl-5">
+              Drafts are shared with you directly on WhatsApp and email. Final master files (PSD, AI, PNG, PDF) are provided via high-speed Google Drive link and direct attachment.
+            </p>
+          </div>
+
+          <div class="glass-card p-5 rounded-2xl border border-slate-800 space-y-1.5">
+            <h4 class="text-sm font-bold text-white flex items-center gap-2">
+              <i class="fa-solid fa-circle-question text-cyan-400 text-xs"></i>
+              How do I make the payment?
+            </h4>
+            <p class="text-xs text-slate-400 leading-relaxed pl-5">
+              You can pay seamlessly via secure digital payment (Google Pay, PhonePe, Paytm, BHIM, UPI) upon order confirmation on WhatsApp.
+            </p>
+          </div>
+
+          <div class="glass-card p-5 rounded-2xl border border-slate-800 space-y-1.5">
+            <h4 class="text-sm font-bold text-white flex items-center gap-2">
+              <i class="fa-solid fa-circle-question text-cyan-400 text-xs"></i>
+              Can I get an official PDF Invoice / Bill?
+            </h4>
+            <p class="text-xs text-slate-400 leading-relaxed pl-5">
+              Yes! Click "Download Official PDF Bill" inside the cart drawer. An A4 Tax Invoice / Bill is generated instantly with your order details, itemized service breakdown, and UPI details.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================== -->
+  <!-- FOOTER                                                   -->
+  <!-- ======================================================== -->
+  <footer class="border-t border-slate-800/80 bg-[#050810] pt-12 sm:pt-16 pb-36 xl:pb-12 relative z-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 sm:gap-10 pb-10 border-b border-slate-800/60">
+        <div class="sm:col-span-2 lg:col-span-2 space-y-4">
+          <a href="index.html" class="flex items-center gap-2.5">
+            <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-cyan-400 via-sky-500 to-purple-600 flex items-center justify-center font-black text-black">
+              <i class="fa-solid fa-pen-nib text-slate-950"></i>
+            </div>
+            <span class="text-xl font-black font-display tracking-tight text-white">OSCA <span class="text-cyan-400">INDIA</span></span>
+          </a>
+          <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+            India's dedicated visual design and creative agency. Specializing in high-engagement social media creatives, high-CTR YouTube thumbnails, vector logo branding, and print media.
+          </p>
+          <div class="flex items-center gap-3 text-slate-400 text-sm pt-1">
+            <a href="https://wa.me/916200177076" target="_blank" class="w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center hover:text-emerald-400 transition-colors" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="tel:+916200177076" class="w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center hover:text-cyan-400 transition-colors" title="Call"><i class="fa-solid fa-phone"></i></a>
+            <a href="mailto:support@oscaindia.com" class="w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center hover:text-white transition-colors" title="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white">Pages</h4>
+          <ul class="space-y-2 text-xs text-slate-400">
+            <li><a href="index.html" class="hover:text-cyan-400 transition-colors">Home Page</a></li>
+            <li><a href="about.html" class="hover:text-cyan-400 transition-colors">About Us</a></li>
+            <li><a href="services.html" class="text-cyan-400 font-semibold">All Services</a></li>
+            <li><a href="contact.html" class="hover:text-cyan-400 transition-colors">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white">Offerings</h4>
+          <ul class="space-y-2 text-xs text-slate-400">
+            <li><a href="services.html" class="hover:text-cyan-400 transition-colors">Instagram Posters</a></li>
+            <li><a href="services.html" class="hover:text-cyan-400 transition-colors">YouTube Thumbnails</a></li>
+            <li><a href="services.html" class="hover:text-cyan-400 transition-colors">Minimalist Logos</a></li>
+            <li><a href="services.html" class="hover:text-cyan-400 transition-colors">Festival Creatives</a></li>
+            <li><a href="services.html" class="hover:text-cyan-400 transition-colors">Brand Style Guides</a></li>
+          </ul>
+        </div>
+
+        <div class="sm:col-span-2 lg:col-span-1 space-y-3">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white">Studio Line</h4>
+          <div class="text-xs text-slate-400 space-y-1.5">
+            <p>Hotline: <a href="tel:+916200177076" class="text-white font-bold hover:text-cyan-400">Call Helpline</a></p>
+            <p>WhatsApp: <a href="https://wa.me/916200177076" target="_blank" class="text-emerald-400 font-bold hover:underline">Chat on WhatsApp</a></p>
+            <p>Google Profile: <a href="https://share.google/KetARk5s5CUDVXaoO" target="_blank" class="text-amber-400 font-bold hover:underline">4.9 ★★★★★ (38+)</a></p>
+            <p>Email: <span class="text-white">support@oscaindia.com</span></p>
+          </div>
+          <a href="tel:+916200177076" class="inline-block mt-2 px-3.5 py-1.5 rounded-lg text-[11px] font-bold bg-cyan-400 text-slate-950 hover:bg-cyan-300 transition-colors">Call Now</a>
+        </div>
+      </div>
+
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div>&copy; 2026 <strong class="text-slate-300">OSCA INDIA Graphic Design Studio</strong>. All rights reserved. Registered under Creative Media India.</div>
+        <div class="flex items-center gap-4 text-[11px]">
+          <span>Pan-India &bull; Express Turnaround</span>
+          <span>&bull;</span>
+          <span>100% Satisfaction Guarantee</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart Drawer Component -->
+  <div id="cart-backdrop" class="drawer-backdrop fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-[900] opacity-0 pointer-events-none"></div>
+  <div id="cart-drawer" class="drawer-panel fixed top-0 right-0 bottom-0 w-full sm:w-[440px] bg-[#090d16] border-l border-slate-800 z-[950] translate-x-full flex flex-col shadow-2xl overflow-hidden">
+    <div class="p-4 border-b border-slate-800 flex items-center justify-between bg-slate-900/50">
+      <div class="flex items-center gap-2">
+        <i class="fa-solid fa-bag-shopping text-cyan-400"></i>
+        <h3 class="text-sm font-bold text-white">Your Design Cart (OSCA INDIA)</h3>
+      </div>
+      <div class="flex items-center gap-2">
+        <button 
+          type="button"
+          onclick="App.clearCart()" 
+          class="px-2.5 py-1 rounded-lg text-[11px] font-bold text-slate-400 hover:text-red-400 hover:bg-slate-800 transition-colors flex items-center gap-1.5"
+          title="Reset Cart"
+        >
+          <i class="fa-solid fa-rotate-left text-xs"></i>
+          <span>Reset</span>
+        </button>
+        <button id="btn-close-cart" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white flex items-center justify-center"><i class="fa-solid fa-xmark text-sm"></i></button>
+      </div>
+    </div>
+    <div class="flex-1 overflow-y-auto p-4 space-y-4">
+      <div id="cart-items-list" class="space-y-2.5"></div>
+      <div id="cart-empty-state" class="py-16 text-center space-y-3">
+        <i class="fa-solid fa-cart-shopping text-3xl text-slate-600"></i>
+        <h4 class="text-sm font-bold text-white">Your cart is empty</h4>
+        <p class="text-xs text-slate-400">Add services from our catalog.</p>
+      </div>
+      <div id="cart-footer" class="space-y-4 hidden">
+        <div class="flex gap-2">
+          <input id="coupon-code" type="text" placeholder="Coupon (e.g. OSCA10)" class="flex-1 bg-slate-900 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white uppercase focus:outline-none focus:border-cyan-400" />
+          <button id="btn-apply-coupon" type="button" class="px-4 py-2 rounded-xl text-xs font-bold bg-cyan-400 text-slate-950">Apply</button>
+        </div>
+        <div class="p-3.5 rounded-2xl bg-slate-900 border border-slate-800 space-y-2.5">
+          <h4 class="text-xs font-bold text-white">Client Order Details</h4>
+          <div>
+            <label class="block text-[10px] text-slate-400 mb-0.5">Your Full Name *</label>
+            <input id="client-name" type="text" required placeholder="e.g. Rahul Verma" class="w-full bg-[#080c14] border border-slate-700 rounded-lg px-3 py-1.5 text-xs text-white focus:outline-none focus:border-cyan-400" />
+          </div>
+          <div>
+            <label class="block text-[10px] text-slate-400 mb-0.5">Phone / WhatsApp Number *</label>
+            <input id="client-phone" type="tel" required placeholder="e.g. 9876543210" class="w-full bg-[#080c14] border border-slate-700 rounded-lg px-3 py-1.5 text-xs text-white focus:outline-none focus:border-cyan-400" />
+          </div>
+          <div>
+            <label class="block text-[10px] text-slate-400 mb-0.5">Brand / Channel Name</label>
+            <input id="client-brand" type="text" placeholder="Company or channel name" class="w-full bg-[#080c14] border border-slate-700 rounded-lg px-3 py-1.5 text-xs text-white focus:outline-none focus:border-cyan-400" />
+          </div>
+          <div>
+            <label class="block text-[10px] text-slate-400 mb-0.5">Project Instructions / Notes</label>
+            <textarea id="client-notes" rows="2" placeholder="Design colors, theme, or idea..." class="w-full bg-[#080c14] border border-slate-700 rounded-lg px-3 py-1.5 text-xs text-white focus:outline-none focus:border-cyan-400"></textarea>
+          </div>
+        </div>
+        <div class="p-3.5 rounded-xl bg-slate-900 border border-slate-800 space-y-1.5 text-xs">
+          <div class="flex justify-between text-slate-400"><span>Subtotal:</span><span id="cart-subtotal" class="font-bold text-white">₹0</span></div>
+          <div id="cart-discount-row" class="flex justify-between text-emerald-400 hidden"><span>Discount:</span><span id="cart-discount" class="font-bold">-₹0</span></div>
+          <div class="pt-1.5 border-t border-slate-800 flex justify-between text-sm font-bold text-white"><span>Total Payable:</span><span id="cart-total" class="text-lg font-black text-cyan-400 font-display">₹0</span></div>
+        </div>
+        <div class="space-y-2">
+          <button id="btn-whatsapp-order" type="button" class="w-full py-3 rounded-xl text-xs font-bold btn-whatsapp-action flex items-center justify-center gap-2">
+            <i class="fa-brands fa-whatsapp text-base"></i>
+            <span>Send Order via WhatsApp</span>
+          </button>
+          <button id="btn-download-pdf" type="button" class="w-full py-2.5 rounded-xl text-xs font-bold btn-primary-action flex items-center justify-center gap-2">
+            <i class="fa-solid fa-file-pdf"></i>
+            <span>Download Official PDF Bill</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Success Modal -->
+  <div id="success-modal" class="fixed inset-0 bg-slate-950/85 backdrop-blur-md z-[1000] hidden items-center justify-center p-4">
+    <div class="glass-card p-6 sm:p-8 rounded-3xl border border-cyan-400/30 max-w-md w-full text-center space-y-4">
+      <div class="w-12 h-12 rounded-full bg-emerald-400/20 text-emerald-400 mx-auto flex items-center justify-center text-xl"><i class="fa-solid fa-check"></i></div>
+      <div>
+        <h3 class="text-xl font-bold text-white font-display">Order Registered!</h3>
+        <p class="text-xs text-slate-300 mt-1">Thank you <span id="modal-client-name" class="font-bold text-cyan-400">Client</span>. Your design order is confirmed.</p>
+      </div>
+      <div class="p-3.5 rounded-xl bg-slate-900 border border-slate-800 text-left space-y-1.5 text-xs">
+        <div class="flex justify-between"><span class="text-slate-400">Order ID:</span><span id="modal-order-id" class="font-bold text-white font-mono">OSCA-ORD-XXXX</span></div>
+        <div class="flex justify-between"><span class="text-slate-400">Total:</span><span id="modal-order-amount" class="font-bold text-cyan-400 font-display">₹0</span></div>
+        <div class="flex justify-between"><span class="text-slate-400">Payment:</span><span class="font-bold text-emerald-400">WhatsApp Confirmation</span></div>
+      </div>
+      <div class="space-y-2">
+        <a id="modal-btn-whatsapp" href="#" target="_blank" class="w-full py-2.5 rounded-xl text-xs font-bold btn-whatsapp-action flex items-center justify-center gap-2"><i class="fa-brands fa-whatsapp text-base"></i><span>Confirm on WhatsApp</span></a>
+        <button id="modal-btn-download-pdf" type="button" class="w-full py-2.5 rounded-xl text-xs font-bold btn-primary-action flex items-center justify-center gap-2"><i class="fa-solid fa-file-pdf"></i><span>Re-Download PDF Bill</span></button>
+        <button onclick="document.getElementById('success-modal').classList.add('hidden'); document.getElementById('success-modal').classList.remove('flex');" class="w-full py-1.5 text-xs text-slate-400 hover:text-white">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================== -->
+  <!-- MOBILE & TABLET BOTTOM NAVIGATION DOCK (UP TO 12 INCH)   -->
+  <!-- ======================================================== -->
+  <nav class="mobile-bottom-nav xl:hidden" aria-label="Mobile and Tablet Bottom Navigation">
+    <a href="index.html" class="mobile-nav-item" id="mob-nav-home">
+      <i class="fa-solid fa-house"></i>
+      <span>Home</span>
+    </a>
+    <a href="services.html" class="mobile-nav-item active" id="mob-nav-services">
+      <i class="fa-solid fa-layer-group"></i>
+      <span>Services</span>
+    </a>
+    <a href="index.html#google-reviews" class="mobile-nav-item" id="mob-nav-reviews">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google" class="w-4 h-4" />
+      <span>4.9 ★</span>
+    </a>
+    <a href="about.html" class="mobile-nav-item" id="mob-nav-about">
+      <i class="fa-solid fa-circle-info"></i>
+      <span>About</span>
+    </a>
+    <!-- Add to Cart (Placed in Bottom Nav in place of Contact) -->
+    <button 
+      type="button" 
+      class="btn-open-cart mobile-nav-item relative bg-transparent border-0 cursor-pointer" 
+      id="mob-nav-cart" 
+      aria-label="Open Cart" 
+      title="View Cart"
+    >
+      <div class="relative flex items-center justify-center">
+        <i class="fa-solid fa-cart-shopping text-base text-cyan-400"></i>
+        <span class="cart-count-badge hidden absolute -top-1.5 -right-2.5 w-4 h-4 rounded-full bg-cyan-400 text-slate-950 text-[9px] font-black flex items-center justify-center shadow-md">0</span>
+      </div>
+      <span>Cart</span>
+    </button>
+  </nav>
+
+  <!-- Floating Action Buttons (Docked Directly Above Mobile Bottom Nav) -->
+  <div class="floating-actions" aria-label="Quick Contact Actions">
+    <a href="tel:+916200177076" class="floating-btn floating-btn-call" title="Direct Call" aria-label="Call Studio"><i class="fa-solid fa-phone text-base"></i></a>
+    <a href="https://wa.me/916200177076?text=Hi%20OSCA%20India%2C%20I%20want%20to%20order%20graphic%20designs." target="_blank" class="floating-btn btn-whatsapp-action" title="Chat on WhatsApp" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp text-2xl"></i></a>
+  </div>
+
+  <script src="invoice.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+

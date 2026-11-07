@@ -1,0 +1,1970 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      OSCA INDIA — Premier Graphic Design Studio | Posters, Thumbnails & Logos
+    </title>
+    <meta
+      name="description"
+      content="OSCA INDIA — High-converting Social Media Posters, Viral YouTube Thumbnails, and Minimalist Vector Logos. Order via WhatsApp or Call +91 6200177076 with instant PDF Bill!"
+    />
+
+    <!-- Tailwind CSS CDN -->
+    <script>
+      const _origWarn = console.warn;
+      console.warn = (...args) => {
+        if (args[0] && typeof args[0] === "string" && args[0].includes("cdn.tailwindcss.com")) return;
+        _origWarn.apply(console, args);
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                cyan: "#00f0ff",
+                purple: "#8b5cf6",
+                deep: "#070a12",
+                surface: "#0e1526",
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Google Fonts & Font Awesome 6 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- jsPDF & AutoTable -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
+
+    <!-- Canvas Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+    <!-- Immediate Theme Loader (Zero Flicker) -->
+    <script>
+      (function () {
+        try {
+          const params = new URLSearchParams(window.location.search);
+          const queryTheme = params.get("theme");
+          if (queryTheme === "light" || queryTheme === "dark") {
+            localStorage.setItem("osca_theme", queryTheme);
+          }
+          const theme = localStorage.getItem("osca_theme") || "dark";
+          if (theme === "light")
+            document.documentElement.classList.add("light");
+          else document.documentElement.classList.add("dark");
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+
+  <body
+    class="bg-[#070a12] text-slate-100 antialiased selection:bg-cyan-500 selection:text-black relative min-h-screen flex flex-col justify-between pb-36 xl:pb-0"
+  >
+    <!-- Ambient Background Lighting (Enclosed to prevent horizontal scroll) -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+      <div class="ambient-glow-1"></div>
+      <div class="ambient-glow-2"></div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container"></div>
+
+    <!-- ======================================================== -->
+    <!-- NAVIGATION BAR                                           -->
+    <!-- ======================================================== -->
+    <header class="sticky top-0 z-50 glass-clean border-b border-slate-800/80">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between"
+      >
+        <!-- Brand Logo: OSCA INDIA -->
+        <a href="index.html" class="flex items-center gap-3 group">
+          <div
+            class="w-11 h-11 rounded-xl bg-gradient-to-tr from-cyan-400 via-sky-500 to-purple-600 p-[2px] shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform"
+          >
+            <div
+              class="logo-box-inner w-full h-full bg-[#070a12] rounded-[10px] flex items-center justify-center"
+            >
+              <svg
+                class="w-6 h-6 text-cyan-400"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="8"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-dasharray="32 8"
+                />
+                <path
+                  d="M8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12C16 14.2091 14.2091 16 12 16"
+                  stroke="#8b5cf6"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                />
+                <circle cx="12" cy="12" r="2" fill="currentColor" />
+              </svg>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex items-center gap-1.5 sm:gap-2 leading-none">
+              <span
+                class="logo-osca-text text-lg sm:text-2xl font-black font-display tracking-tight text-white"
+                >OSCA</span
+              >
+              <span
+                class="px-1.5 sm:px-2 py-0.5 rounded text-[10px] sm:text-[11px] font-extrabold tracking-wider bg-cyan-400/15 text-cyan-400 border border-cyan-400/30"
+                >INDIA</span
+              >
+            </div>
+            <span
+              class="text-[9px] sm:text-[10px] uppercase font-bold text-slate-400 tracking-wider block mt-0.5 sm:mt-1"
+              >Graphic Studio</span
+            >
+          </div>
+        </a>
+
+        <!-- Individual Pages Navigation Links (Visible on Large Desktops > 12") -->
+        <nav
+          class="hidden xl:flex items-center gap-7 text-sm font-semibold text-slate-300"
+        >
+          <a
+            href="index.html"
+            class="text-cyan-400 border-b-2 border-cyan-400 pb-1"
+            >Home</a
+          >
+          <a href="about.html" class="hover:text-cyan-400 transition-colors"
+            >About Us</a
+          >
+          <a href="services.html" class="hover:text-cyan-400 transition-colors"
+            >Services</a
+          >
+          <a
+            href="#google-reviews"
+            class="hover:text-amber-400 transition-colors flex items-center gap-1.5"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+              alt="Google"
+              class="w-3.5 h-3.5"
+            />
+            <span>Reviews (4.9★)</span>
+          </a>
+          <a href="contact.html" class="hover:text-cyan-400 transition-colors"
+            >Contact Us</a
+          >
+        </nav>
+
+        <!-- Right Header Actions (Mode Change & Contact on Mobile/Tablet | Cart on Desktop) -->
+        <div class="flex items-center gap-2 sm:gap-3">
+          <!-- Theme Toggle (Mode Change) Button -->
+          <button
+            type="button"
+            onclick="toggleTheme()"
+            class="theme-toggle-btn h-10 px-3 sm:px-3.5 rounded-xl btn-secondary-action flex items-center justify-center gap-2 transition-all text-xs font-semibold"
+            title="Switch Theme"
+            aria-label="Switch Theme"
+          >
+            <i class="theme-icon fa-solid fa-sun text-amber-400 text-sm"></i>
+            <span class="theme-label hidden xl:inline text-slate-300"
+              >Light</span
+            >
+          </button>
+
+          <!-- Contact Button (Swapped in place of Cart for Mobile & Tablets up to 12") -->
+          <a
+            href="contact.html"
+            class="header-contact-btn flex xl:hidden h-10 px-3 sm:px-3.5 rounded-xl btn-secondary-action items-center justify-center gap-1.5 text-xs font-semibold"
+            title="Contact Studio"
+            aria-label="Contact Studio"
+          >
+            <i class="fa-solid fa-envelope text-cyan-400 text-sm"></i>
+            <span>Contact</span>
+          </a>
+
+          <!-- Add to Cart / Cart Drawer Button (Visible on Large Desktop Screens > 12") -->
+          <button
+            class="btn-open-cart relative h-10 px-3.5 sm:px-4 rounded-xl btn-secondary-action hidden xl:flex items-center justify-center gap-2"
+            title="Open Shopping Cart"
+            aria-label="Shopping Cart"
+          >
+            <i class="fa-solid fa-bag-shopping text-cyan-400 text-sm"></i>
+            <span class="text-xs font-semibold">Cart</span>
+            <span
+              class="cart-count-badge hidden absolute -top-1 -right-1 w-5 h-5 rounded-full bg-cyan-400 text-slate-950 text-[10px] font-black flex items-center justify-center shadow-md"
+            >
+              0
+            </span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ======================================================== -->
+    <!-- HERO SECTION WITH PROMINENT FLOATING SOCIAL BADGES & CANVAS-->
+    <!-- ======================================================== -->
+    <main class="flex-grow">
+      <section
+        class="pt-16 pb-16 sm:pt-20 sm:pb-24 relative z-10 overflow-hidden"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div
+            class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center"
+          >
+            <!-- Left Content (Centered on Mobile, Left-aligned on Desktop) -->
+            <div
+              class="hero-content-col lg:col-span-7 space-y-6 text-center lg:text-left flex flex-col items-center lg:items-start justify-center"
+            >
+              <div
+                class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-xs text-slate-300 font-semibold shadow-inner"
+              >
+                <span
+                  class="w-2 h-2 rounded-full bg-cyan-400 animate-ping"
+                ></span>
+                <span
+                  >All Social Platforms &bull; High-CTR Creatives &bull; Fast
+                  Delivery</span
+                >
+              </div>
+
+              <h1
+                class="text-4xl sm:text-6xl font-extrabold font-display tracking-tight text-white leading-[1.12]"
+              >
+                Visual Creatives Engineered for
+                <span class="gradient-accent-text"
+                  >Social Media Dominance.</span
+                >
+              </h1>
+
+              <p
+                class="text-base sm:text-lg text-slate-300 max-w-xl font-normal leading-relaxed"
+              >
+                Viral YouTube Thumbnails (1280x720), High-Engagement Instagram
+                Posters (1080x1350), and Minimalist Brand Logos. Delivered in 24
+                hours with full master source files.
+              </p>
+
+              <!-- Action Buttons -->
+              <div
+                class="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-3.5"
+              >
+                <a
+                  href="https://wa.me/916200177076?text=Hi%20OSCA%20India%2C%20I%20want%20to%20order%20graphic%20designs%20for%20my%20brand."
+                  target="_blank"
+                  class="btn-whatsapp-action px-6 py-3.5 rounded-xl text-sm font-bold flex items-center gap-2.5"
+                >
+                  <i class="fa-brands fa-whatsapp text-lg"></i>
+                  <span>Order via WhatsApp</span>
+                </a>
+
+                <a
+                  href="services.html"
+                  class="btn-secondary-action px-6 py-3.5 rounded-xl text-sm font-semibold flex items-center gap-2"
+                >
+                  <span>Browse All Services</span>
+                  <i class="fa-solid fa-arrow-right text-xs text-cyan-400"></i>
+                </a>
+              </div>
+
+              <!-- Guarantees Strip -->
+              <div
+                class="pt-6 border-t border-slate-800/80 flex flex-wrap items-center justify-center lg:justify-start gap-6 sm:gap-10 text-xs text-slate-400"
+              >
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-bolt text-cyan-400 text-sm"></i>
+                  <span class="text-slate-300 font-medium"
+                    >24h Express Turnaround</span
+                  >
+                </div>
+                <div class="flex items-center gap-2">
+                  <i
+                    class="fa-solid fa-arrows-rotate text-purple-400 text-sm"
+                  ></i>
+                  <span class="text-slate-300 font-medium"
+                    >Unlimited Revisions</span
+                  >
+                </div>
+                <div class="flex items-center gap-2">
+                  <i
+                    class="fa-solid fa-file-invoice text-emerald-400 text-sm"
+                  ></i>
+                  <span class="text-slate-300 font-medium"
+                    >Instant PDF Bill / Tax Invoice</span
+                  >
+                </div>
+              </div>
+
+              <!-- Google My Business Trust Badge -->
+              <div class="pt-2 flex justify-center lg:justify-start">
+                <a
+                  href="https://share.google/KetARk5s5CUDVXaoO"
+                  target="_blank"
+                  class="inline-flex items-center gap-2.5 px-4 py-2 rounded-2xl bg-slate-900/90 border border-slate-700/80 hover:border-amber-400/50 transition-all text-xs group shadow-lg"
+                  title="View Osca India on Google My Business"
+                >
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+                    alt="Google"
+                    class="w-4 h-4"
+                  />
+                  <div class="flex items-center gap-1.5">
+                    <span class="font-bold text-white">4.9</span>
+                    <div class="flex text-amber-400 text-[11px]">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <span class="text-slate-400 text-[11px]"
+                      >(38 Google Reviews)</span
+                    >
+                  </div>
+                  <span
+                    class="text-[11px] text-cyan-400 font-bold group-hover:translate-x-0.5 transition-transform"
+                    >&rarr;</span
+                  >
+                </a>
+              </div>
+            </div>
+
+            <!-- Right: Visual Canvas with 2 Calm, Non-Overlapping Floating Badges -->
+            <div class="lg:col-span-5 relative pt-4 pb-4">
+              <!-- Static Badge 1: YouTube Icon (Top-Right) -->
+              <div
+                class="hero-floating-card -top-5 -right-3 hidden xl:flex border-red-500/40"
+                onclick="
+                  document
+                    .querySelector('[data-category=\'thumbnails\']')
+                    .click();
+                  location.href = '#services';
+                "
+                title="YouTube High-CTR Thumbnails"
+              >
+                <div
+                  class="w-10 h-10 rounded-xl bg-red-600 text-white flex items-center justify-center text-xl shadow-lg shadow-red-600/30"
+                >
+                  <i class="fa-brands fa-youtube"></i>
+                </div>
+                <div class="text-left leading-tight">
+                  <span class="text-xs font-bold text-white block"
+                    >1280x720 HD</span
+                  >
+                  <span class="text-[10px] text-red-400 font-semibold"
+                    >High CTR Thumbnail</span
+                  >
+                </div>
+              </div>
+
+              <!-- Main Artwork Showcase Card -->
+              <div
+                class="glass-card p-4 sm:p-5 rounded-3xl border border-slate-800 shadow-2xl relative z-10"
+              >
+                <!-- Tabs to switch artwork preview -->
+                <div
+                  class="flex items-center justify-between pb-3 mb-3 border-b border-slate-800/80 text-xs"
+                >
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-pulse"
+                    ></span>
+                    <span class="font-bold text-white"
+                      >Live Artwork Showcase</span
+                    >
+                  </div>
+                  <div class="flex items-center gap-1.5 text-[10px]">
+                    <button
+                      onclick="
+                        document.getElementById('hero-mockup-img').src =
+                          'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80'
+                      "
+                      class="px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-cyan-400 font-semibold transition-colors"
+                    >
+                      Poster
+                    </button>
+                    <button
+                      onclick="
+                        document.getElementById('hero-mockup-img').src =
+                          'https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=80'
+                      "
+                      class="px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-red-400 font-semibold transition-colors"
+                    >
+                      Thumbnail
+                    </button>
+                    <button
+                      onclick="
+                        document.getElementById('hero-mockup-img').src =
+                          'https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=800&q=80'
+                      "
+                      class="px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-purple-400 font-semibold transition-colors"
+                    >
+                      Logo
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Artwork Image -->
+                <div
+                  class="relative rounded-2xl overflow-hidden aspect-[4/3] bg-slate-900 group"
+                >
+                  <img
+                    id="hero-mockup-img"
+                    src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80"
+                    alt="OSCA INDIA Creative Design"
+                    class="w-full h-full object-cover transition-all duration-300 group-hover:scale-105"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-[#070a12] via-transparent to-transparent"
+                  ></div>
+
+                  <div
+                    class="absolute bottom-4 left-4 right-4 flex items-center justify-between"
+                  >
+                    <div>
+                      <span
+                        class="text-[10px] text-cyan-400 font-bold uppercase tracking-wider block"
+                        >Featured Artwork</span
+                      >
+                      <h4 class="text-sm font-bold text-white">
+                        Social Media Master Creative
+                      </h4>
+                    </div>
+                    <button
+                      onclick="App.addToCart('poster-insta-single', event)"
+                      class="px-3.5 py-1.5 rounded-lg text-xs font-bold btn-primary-action"
+                    >
+                      ₹299 • Add to Cart
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Contact Hotline Strip -->
+                <div
+                  class="mt-3.5 p-3 rounded-xl bg-slate-900/90 flex items-center justify-between text-xs"
+                >
+                  <div class="flex items-center gap-2 text-slate-300">
+                    <i class="fa-solid fa-phone text-cyan-400"></i>
+                    <span>Direct Helpline: <strong class="text-white">Active 24/7</strong></span>
+                  </div>
+                  <a
+                    href="tel:+916200177076"
+                    class="text-cyan-400 font-bold hover:underline"
+                  >
+                    Call Now &rarr;
+                  </a>
+                </div>
+              </div>
+
+              <!-- Static Badge 2: Instagram Icon (Bottom-Left) -->
+              <div
+                class="hero-floating-card -bottom-5 -left-3 hidden xl:flex border-pink-500/40"
+                onclick="
+                  document.querySelector('[data-category=\'social\']').click();
+                  location.href = '#services';
+                "
+                title="Instagram Posters & Carousels"
+              >
+                <div
+                  class="w-10 h-10 rounded-xl bg-gradient-to-tr from-yellow-500 via-pink-500 to-purple-600 text-white flex items-center justify-center text-xl shadow-lg shadow-pink-500/30"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="text-left leading-tight">
+                  <span class="text-xs font-bold text-white block"
+                    >1080x1350 Post</span
+                  >
+                  <span class="text-[10px] text-pink-400 font-semibold"
+                    >Carousels &bull; High Reach</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================== -->
+      <!-- INFINITE ANIMATED SOCIAL MEDIA TICKER / MARQUEE          -->
+      <!-- (Clean, Calm Horizontal Flow of 5 Core Platforms)        -->
+      <!-- ======================================================== -->
+      <div
+        class="py-4 bg-[#0a0f1d] border-y border-slate-800/80 overflow-hidden relative z-10"
+      >
+        <div class="marquee-container">
+          <div class="marquee-content">
+            <!-- Item 1: Instagram -->
+            <div class="social-pill">
+              <span
+                class="w-6 h-6 rounded-full bg-gradient-to-tr from-yellow-500 via-pink-500 to-purple-600 flex items-center justify-center text-white text-xs"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </span>
+              <span>Instagram Posts &amp; Carousels (1080x1350)</span>
+            </div>
+
+            <!-- Item 2: YouTube -->
+            <div class="social-pill">
+              <span
+                class="w-6 h-6 rounded-full bg-red-600 flex items-center justify-center text-white text-xs"
+              >
+                <i class="fa-brands fa-youtube"></i>
+              </span>
+              <span>YouTube Viral Thumbnails (1280x720)</span>
+            </div>
+
+            <!-- Item 3: Facebook -->
+            <div class="social-pill">
+              <span
+                class="w-6 h-6 rounded-full bg-blue-600 flex items-center justify-center text-white text-xs"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </span>
+              <span>Facebook Ad Creatives (1200x630)</span>
+            </div>
+
+            <!-- Item 4: WhatsApp -->
+            <div class="social-pill">
+              <span
+                class="w-6 h-6 rounded-full bg-emerald-500 flex items-center justify-center text-white text-xs"
+              >
+                <i class="fa-brands fa-whatsapp"></i>
+              </span>
+              <span>WhatsApp Catalogs &amp; Status (1080x1920)</span>
+            </div>
+
+            <!-- Item 5: LinkedIn -->
+            <div class="social-pill">
+              <span
+                class="w-6 h-6 rounded-full bg-[#0a66c2] flex items-center justify-center text-white text-xs"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </span>
+              <span>LinkedIn Executive Banners (1584x396)</span>
+            </div>
+
+            <!-- DUPLICATE FOR SEAMLESS INFINITE LOOP -->
+            <div class="social-pill">
+              <span
+                class="w-6 h-6 rounded-full bg-gradient-to-tr from-yellow-500 via-pink-500 to-purple-600 flex items-center justify-center text-white text-xs"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </span>
+              <span>Instagram Posts &amp; Carousels (1080x1350)</span>
+            </div>
+            <div class="social-pill">
+              <span
+                class="w-6 h-6 rounded-full bg-red-600 flex items-center justify-center text-white text-xs"
+              >
+                <i class="fa-brands fa-youtube"></i>
+              </span>
+              <span>YouTube Viral Thumbnails (1280x720)</span>
+            </div>
+            <div class="social-pill">
+              <span
+                class="w-6 h-6 rounded-full bg-blue-600 flex items-center justify-center text-white text-xs"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </span>
+              <span>Facebook Ad Creatives (1200x630)</span>
+            </div>
+            <div class="social-pill">
+              <span
+                class="w-6 h-6 rounded-full bg-emerald-500 flex items-center justify-center text-white text-xs"
+              >
+                <i class="fa-brands fa-whatsapp"></i>
+              </span>
+              <span>WhatsApp Catalogs &amp; Status (1080x1920)</span>
+            </div>
+            <div class="social-pill">
+              <span
+                class="w-6 h-6 rounded-full bg-[#0a66c2] flex items-center justify-center text-white text-xs"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </span>
+              <span>LinkedIn Executive Banners (1584x396)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ======================================================== -->
+      <!-- DEDICATED SECTION: PLATFORMS WE DESIGN FOR               -->
+      <!-- (Clean, Spacious, Uncluttered 5 Core Platforms)          -->
+      <!-- ======================================================== -->
+      <section
+        class="py-20 bg-[#070b14] border-b border-slate-900/80 relative z-10"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center max-w-2xl mx-auto space-y-3 mb-12">
+            <span
+              class="text-xs font-bold uppercase tracking-wider text-cyan-400"
+              >Supported Social Platforms</span
+            >
+            <h2
+              class="text-3xl sm:text-4xl font-extrabold font-display text-white"
+            >
+              Platforms We Design For
+            </h2>
+            <p class="text-slate-400 text-xs sm:text-sm">
+              Exact platform safe-zones, optimal resolutions, and
+              algorithm-favored aspect ratios tailored to maximize your
+              impressions.
+            </p>
+          </div>
+
+          <!-- 5 Core Platform Cards Grid (Spacious, Clean & High Visibility) -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
+            <!-- Card 1: Instagram -->
+            <div
+              class="platform-feature-card flex flex-col justify-between text-center p-6 group"
+              onclick="
+                document.querySelector('[data-category=\'social\']').click();
+                location.href = '#services';
+              "
+            >
+              <div
+                class="w-14 h-14 mx-auto rounded-2xl bg-gradient-to-tr from-yellow-500 via-pink-500 to-purple-600 flex items-center justify-center text-white text-2xl shadow-lg shadow-pink-500/25 group-hover:scale-110 transition-transform"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div class="mt-4 space-y-1">
+                <h3
+                  class="text-base font-bold text-white group-hover:text-pink-400 transition-colors"
+                >
+                  Instagram
+                </h3>
+                <p class="text-xs text-slate-400">Posts &amp; Carousels</p>
+                <span
+                  class="inline-block mt-2 px-3 py-1 rounded-full text-[10px] font-bold bg-slate-900 text-pink-300 border border-pink-500/30"
+                >
+                  1080x1350 HD
+                </span>
+              </div>
+            </div>
+
+            <!-- Card 2: YouTube -->
+            <div
+              class="platform-feature-card flex flex-col justify-between text-center p-6 group"
+              onclick="
+                document
+                  .querySelector('[data-category=\'thumbnails\']')
+                  .click();
+                location.href = '#services';
+              "
+            >
+              <div
+                class="w-14 h-14 mx-auto rounded-2xl bg-red-600 flex items-center justify-center text-white text-2xl shadow-lg shadow-red-600/25 group-hover:scale-110 transition-transform"
+              >
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+              <div class="mt-4 space-y-1">
+                <h3
+                  class="text-base font-bold text-white group-hover:text-red-400 transition-colors"
+                >
+                  YouTube
+                </h3>
+                <p class="text-xs text-slate-400">Viral CTR Thumbnails</p>
+                <span
+                  class="inline-block mt-2 px-3 py-1 rounded-full text-[10px] font-bold bg-slate-900 text-red-300 border border-red-500/30"
+                >
+                  1280x720 HD
+                </span>
+              </div>
+            </div>
+
+            <!-- Card 3: Facebook -->
+            <div
+              class="platform-feature-card flex flex-col justify-between text-center p-6 group"
+              onclick="
+                document.querySelector('[data-category=\'social\']').click();
+                location.href = '#services';
+              "
+            >
+              <div
+                class="w-14 h-14 mx-auto rounded-2xl bg-blue-600 flex items-center justify-center text-white text-2xl shadow-lg shadow-blue-600/25 group-hover:scale-110 transition-transform"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <div class="mt-4 space-y-1">
+                <h3
+                  class="text-base font-bold text-white group-hover:text-blue-400 transition-colors"
+                >
+                  Facebook
+                </h3>
+                <p class="text-xs text-slate-400">Ad &amp; Feed Creatives</p>
+                <span
+                  class="inline-block mt-2 px-3 py-1 rounded-full text-[10px] font-bold bg-slate-900 text-blue-300 border border-blue-500/30"
+                >
+                  1200x630 Meta
+                </span>
+              </div>
+            </div>
+
+            <!-- Card 4: WhatsApp -->
+            <div
+              class="platform-feature-card flex flex-col justify-between text-center p-6 group"
+              onclick="
+                window.open(
+                  'https://wa.me/916200177076?text=Hi%20OSCA%20India%2C%20I%20want%20WhatsApp%20business%20designs.',
+                  '_blank',
+                )
+              "
+            >
+              <div
+                class="w-14 h-14 mx-auto rounded-2xl bg-emerald-500 flex items-center justify-center text-white text-2xl shadow-lg shadow-emerald-500/25 group-hover:scale-110 transition-transform"
+              >
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div class="mt-4 space-y-1">
+                <h3
+                  class="text-base font-bold text-white group-hover:text-emerald-400 transition-colors"
+                >
+                  WhatsApp
+                </h3>
+                <p class="text-xs text-slate-400">Catalogs &amp; Status</p>
+                <span
+                  class="inline-block mt-2 px-3 py-1 rounded-full text-[10px] font-bold bg-slate-900 text-emerald-300 border border-emerald-500/30"
+                >
+                  1080x1920 Status
+                </span>
+              </div>
+            </div>
+
+            <!-- Card 5: LinkedIn -->
+            <div
+              class="platform-feature-card flex flex-col justify-between text-center p-6 group"
+              onclick="
+                document.querySelector('[data-category=\'social\']').click();
+                location.href = '#services';
+              "
+            >
+              <div
+                class="w-14 h-14 mx-auto rounded-2xl bg-[#0a66c2] flex items-center justify-center text-white text-2xl shadow-lg shadow-blue-500/25 group-hover:scale-110 transition-transform"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <div class="mt-4 space-y-1">
+                <h3
+                  class="text-base font-bold text-white group-hover:text-cyan-400 transition-colors"
+                >
+                  LinkedIn
+                </h3>
+                <p class="text-xs text-slate-400">Executive Banners</p>
+                <span
+                  class="inline-block mt-2 px-3 py-1 rounded-full text-[10px] font-bold bg-slate-900 text-cyan-300 border border-cyan-500/30"
+                >
+                  1584x396 Banners
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================== -->
+      <!-- SERVICES CATALOG & ADD TO CART                           -->
+      <!-- ======================================================== -->
+      <section id="services" class="py-20 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            class="flex flex-col md:flex-row items-center justify-between gap-6 mb-12"
+          >
+            <div>
+              <span
+                class="text-xs font-bold uppercase tracking-wider text-cyan-400"
+                >Design Offerings</span
+              >
+              <h2
+                class="text-3xl sm:text-4xl font-extrabold font-display text-white mt-1"
+              >
+                Select Your Creative &amp;
+                <span class="gradient-accent-text">Add to Cart</span>
+              </h2>
+            </div>
+            <a
+              href="services.html"
+              class="btn-secondary-action px-5 py-2.5 rounded-xl text-xs font-bold flex items-center gap-2"
+            >
+              <span>Explore All Services</span>
+              <i class="fa-solid fa-arrow-right text-cyan-400"></i>
+            </a>
+          </div>
+
+          <!-- Filter Tabs -->
+          <div class="flex flex-wrap items-center justify-center gap-2 mb-10">
+            <button
+              data-category="all"
+              class="category-tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-cyan-400 text-slate-950 transition-all"
+            >
+              All Services (12)
+            </button>
+            <button
+              data-category="social"
+              class="category-tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-slate-900 text-slate-400 hover:text-white transition-all"
+            >
+              Social Media Posters
+            </button>
+            <button
+              data-category="thumbnails"
+              class="category-tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-slate-900 text-slate-400 hover:text-white transition-all"
+            >
+              YouTube Thumbnails
+            </button>
+            <button
+              data-category="logos"
+              class="category-tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-slate-900 text-slate-400 hover:text-white transition-all"
+            >
+              Logo &amp; Branding
+            </button>
+            <button
+              data-category="print"
+              class="category-tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-slate-900 text-slate-400 hover:text-white transition-all"
+            >
+              Commercial &amp; Print
+            </button>
+          </div>
+
+          <!-- Services Grid (Rendered by app.js) -->
+          <div
+            id="services-grid"
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
+          ></div>
+        </div>
+      </section>
+
+      <!-- ======================================================== -->
+      <!-- INTERACTIVE PRICING CALCULATOR                           -->
+      <!-- ======================================================== -->
+      <section
+        class="py-20 border-t border-slate-900/80 bg-[#060a12] relative z-10"
+      >
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center max-w-xl mx-auto space-y-2 mb-10">
+            <span
+              class="text-xs font-bold uppercase tracking-wider text-cyan-400"
+              >Pricing Calculator</span
+            >
+            <h2
+              class="text-3xl sm:text-4xl font-extrabold font-display text-white"
+            >
+              Configure Your Custom Bundle
+            </h2>
+            <p class="text-slate-400 text-xs sm:text-sm">
+              Choose creative type, count, delivery turnaround, and immediately
+              add to cart or order on WhatsApp.
+            </p>
+          </div>
+
+          <div
+            class="glass-card p-6 sm:p-8 rounded-3xl border border-slate-800"
+          >
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div class="space-y-5">
+                <div>
+                  <label
+                    for="calc-service"
+                    class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-1.5"
+                  >
+                    Design Category
+                  </label>
+                  <select
+                    id="calc-service"
+                    class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-cyan-400"
+                  >
+                    <option value="insta-single">
+                      Instagram / Facebook Poster (₹299)
+                    </option>
+                    <option value="festival-poster">
+                      Festival &amp; Promotional Creative (₹399)
+                    </option>
+                    <option value="carousel">
+                      Instagram Carousel (5-7 Slides) (₹899)
+                    </option>
+                    <option value="thumbnail">
+                      YouTube Viral Thumbnail (₹349)
+                    </option>
+                    <option value="logo-vector">
+                      Minimalist Vector Logo (₹799)
+                    </option>
+                    <option value="logo-3d">
+                      3D Mascot &amp; Emblem Logo (₹1,499)
+                    </option>
+                    <option value="business-card">
+                      Corporate Stationery &amp; Card (₹399)
+                    </option>
+                  </select>
+                </div>
+
+                <div>
+                  <div
+                    class="flex items-center justify-between text-xs font-bold uppercase tracking-wider text-slate-300 mb-1.5"
+                  >
+                    <span>Quantity</span>
+                    <span id="calc-qty-val" class="text-cyan-400 font-bold"
+                      >1</span
+                    >
+                  </div>
+                  <input
+                    id="calc-qty"
+                    type="range"
+                    min="1"
+                    max="20"
+                    value="1"
+                    class="w-full accent-cyan-400 cursor-pointer"
+                  />
+                </div>
+
+                <div>
+                  <label
+                    for="calc-delivery"
+                    class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-1.5"
+                  >
+                    Turnaround Speed
+                  </label>
+                  <select
+                    id="calc-delivery"
+                    class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-cyan-400"
+                  >
+                    <option value="standard">
+                      Standard (24-48 Hours) - Included
+                    </option>
+                    <option value="express">
+                      ⚡ Express (Within 12 Hours) (+₹199)
+                    </option>
+                  </select>
+                </div>
+
+                <div
+                  class="flex items-center gap-2.5 p-3 rounded-xl bg-slate-900 border border-slate-800"
+                >
+                  <input
+                    id="calc-source"
+                    type="checkbox"
+                    class="w-4 h-4 rounded accent-cyan-400"
+                  />
+                  <label
+                    for="calc-source"
+                    class="text-xs text-slate-300 cursor-pointer"
+                  >
+                    Include Master Source Files (PSD/AI) (+₹149/ea)
+                  </label>
+                </div>
+              </div>
+
+              <!-- Total Card -->
+              <div
+                class="p-6 rounded-2xl bg-slate-900 border border-slate-800 text-center space-y-5"
+              >
+                <div>
+                  <span
+                    class="text-xs text-slate-400 uppercase font-semibold block tracking-wider"
+                    >Estimated Total</span
+                  >
+                  <div
+                    id="calc-total-display"
+                    class="text-4xl sm:text-5xl font-black text-cyan-400 font-display mt-1"
+                  >
+                    ₹299
+                  </div>
+                  <span class="text-[11px] text-slate-500 block mt-1"
+                    >All taxes inclusive • Instant PDF Bill</span
+                  >
+                </div>
+
+                <div class="space-y-2.5">
+                  <button
+                    id="btn-add-calc-to-cart"
+                    class="w-full py-3 rounded-xl text-xs font-bold btn-primary-action flex items-center justify-center gap-2"
+                  >
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <span>Add Package to Cart</span>
+                  </button>
+
+                  <a
+                    href="https://wa.me/916200177076?text=Hi%20OSCA%20India%2C%20I%20used%20your%20calculator%20and%20want%20to%20place%20an%20order."
+                    target="_blank"
+                    class="w-full py-3 rounded-xl text-xs font-bold btn-whatsapp-action flex items-center justify-center gap-2"
+                  >
+                    <i class="fa-brands fa-whatsapp text-base"></i>
+                    <span>Order via WhatsApp</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================== -->
+      <!-- PORTFOLIO SHOWCASE                                       -->
+      <!-- ======================================================== -->
+      <section class="py-20 border-t border-slate-900/80 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center max-w-2xl mx-auto space-y-3 mb-12">
+            <span
+              class="text-xs font-bold uppercase tracking-wider text-purple-400"
+              >Our Work</span
+            >
+            <h2
+              class="text-3xl sm:text-4xl font-extrabold font-display text-white"
+            >
+              Recent Creative Showcase
+            </h2>
+            <p class="text-slate-400 text-xs sm:text-sm">
+              High-converting designs created for leading content creators,
+              startups, and brands.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="glass-card rounded-2xl overflow-hidden group">
+              <div class="relative aspect-square overflow-hidden bg-slate-900">
+                <img
+                  src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80"
+                  alt="Instagram Poster"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-[#070a12] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4"
+                >
+                  <button
+                    onclick="App.addToCart('poster-insta-single', event)"
+                    class="w-full py-2.5 rounded-xl text-xs font-bold btn-primary-action"
+                  >
+                    Order Similar (₹299)
+                  </button>
+                </div>
+              </div>
+              <div class="p-4">
+                <span class="text-[10px] text-pink-400 font-bold uppercase"
+                  >Instagram Poster</span
+                >
+                <h4 class="text-sm font-bold text-white mt-0.5">
+                  Product Launch Creative
+                </h4>
+              </div>
+            </div>
+
+            <div class="glass-card rounded-2xl overflow-hidden group">
+              <div class="relative aspect-square overflow-hidden bg-slate-900">
+                <img
+                  src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=600&q=80"
+                  alt="YouTube Thumbnail"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-[#070a12] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4"
+                >
+                  <button
+                    onclick="App.addToCart('thumb-viral-click', event)"
+                    class="w-full py-2.5 rounded-xl text-xs font-bold btn-primary-action"
+                  >
+                    Order Similar (₹349)
+                  </button>
+                </div>
+              </div>
+              <div class="p-4">
+                <span class="text-[10px] text-red-400 font-bold uppercase"
+                  >YouTube Thumbnail</span
+                >
+                <h4 class="text-sm font-bold text-white mt-0.5">
+                  High-CTR Podcast Artwork
+                </h4>
+              </div>
+            </div>
+
+            <div class="glass-card rounded-2xl overflow-hidden group">
+              <div class="relative aspect-square overflow-hidden bg-slate-900">
+                <img
+                  src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=600&q=80"
+                  alt="Vector Logo"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-[#070a12] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4"
+                >
+                  <button
+                    onclick="App.addToCart('logo-minimalist', event)"
+                    class="w-full py-2.5 rounded-xl text-xs font-bold btn-primary-action"
+                  >
+                    Order Similar (₹799)
+                  </button>
+                </div>
+              </div>
+              <div class="p-4">
+                <span class="text-[10px] text-purple-400 font-bold uppercase"
+                  >Minimalist Logo</span
+                >
+                <h4 class="text-sm font-bold text-white mt-0.5">
+                  Geometric Brand Identity
+                </h4>
+              </div>
+            </div>
+
+            <div class="glass-card rounded-2xl overflow-hidden group">
+              <div class="relative aspect-square overflow-hidden bg-slate-900">
+                <img
+                  src="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=600&q=80"
+                  alt="Festival Poster"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-[#070a12] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4"
+                >
+                  <button
+                    onclick="App.addToCart('poster-festival-promo', event)"
+                    class="w-full py-2.5 rounded-xl text-xs font-bold btn-primary-action"
+                  >
+                    Order Similar (₹399)
+                  </button>
+                </div>
+              </div>
+              <div class="p-4">
+                <span class="text-[10px] text-amber-400 font-bold uppercase"
+                  >Festival Creative</span
+                >
+                <h4 class="text-sm font-bold text-white mt-0.5">
+                  Festive Offer Artwork
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================== -->
+      <!-- GOOGLE MY BUSINESS & AUTHENTIC CLIENT REVIEWS SECTION     -->
+      <!-- (Official Google Profile: Osca India Political Social     -->
+      <!-- Media Manager & Advisor • 4.9 Stars • 38+ Real Reviews)  -->
+      <!-- ======================================================== -->
+      <section
+        id="google-reviews"
+        class="py-20 border-t border-slate-900/80 bg-[#060a13] relative z-10"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Section Header -->
+          <div class="text-center max-w-2xl mx-auto space-y-3 mb-12">
+            <div
+              class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-xs font-semibold text-slate-300"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+                alt="Google"
+                class="w-4 h-4"
+              />
+              <span>Google Verified Business Profile</span>
+            </div>
+            <h2
+              class="text-3xl sm:text-4xl font-extrabold font-display text-white"
+            >
+              Rated
+              <span class="text-amber-400"
+                >4.9 &starf;&starf;&starf;&starf;&starf;</span
+              >
+              on Google Reviews
+            </h2>
+            <p class="text-slate-400 text-xs sm:text-sm">
+              Genuine verified client feedback from our official Google My
+              Business listing:
+              <strong class="text-slate-300"
+                >Osca India Political Social Media Manager &amp; Advisor</strong
+              >.
+            </p>
+          </div>
+
+          <!-- Google Rating & Attributes Dashboard Card -->
+          <div
+            class="glass-card p-6 sm:p-8 rounded-3xl border border-slate-800 mb-10 shadow-2xl"
+          >
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+              <!-- Left: 4.9 Score & Star Rating -->
+              <div
+                class="lg:col-span-4 text-center lg:text-left space-y-2 border-b lg:border-b-0 lg:border-r border-slate-800/80 pb-6 lg:pb-0 lg:pr-8"
+              >
+                <div
+                  class="flex items-center justify-center lg:justify-start gap-4"
+                >
+                  <span
+                    class="text-5xl sm:text-6xl font-black text-white font-display"
+                    >4.9</span
+                  >
+                  <div>
+                    <div class="flex text-amber-400 text-lg gap-0.5">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <span class="text-xs text-slate-400 block mt-1"
+                      >38+ Google Reviews</span
+                    >
+                  </div>
+                </div>
+                <p
+                  class="text-xs text-emerald-400 font-semibold flex items-center justify-center lg:justify-start gap-1.5 pt-1"
+                >
+                  <i class="fa-solid fa-circle-check"></i> 100% Genuine Client
+                  Feedback
+                </p>
+
+                <!-- Action Buttons -->
+                <div
+                  class="pt-3 flex flex-wrap items-center justify-center lg:justify-start gap-2.5"
+                >
+                  <a
+                    href="https://share.google/KetARk5s5CUDVXaoO"
+                    target="_blank"
+                    class="px-4 py-2.5 rounded-xl text-xs font-bold btn-primary-action flex items-center gap-2"
+                  >
+                    <i class="fa-solid fa-star text-slate-950"></i>
+                    <span>Rate Us on Google</span>
+                  </a>
+                  <a
+                    href="https://share.google/KetARk5s5CUDVXaoO"
+                    target="_blank"
+                    class="px-4 py-2.5 rounded-xl text-xs font-semibold btn-secondary-action flex items-center gap-2"
+                  >
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+                      alt="Google"
+                      class="w-3.5 h-3.5"
+                    />
+                    <span>View Google Listing</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Middle: Star Rating Distribution -->
+              <div class="lg:col-span-4 space-y-2 text-xs">
+                <div class="flex items-center gap-3">
+                  <span class="w-12 text-slate-400 font-medium">5 star</span>
+                  <div
+                    class="flex-1 h-2 rounded-full bg-slate-800 overflow-hidden"
+                  >
+                    <div
+                      class="h-full bg-amber-400 rounded-full"
+                      style="width: 96%"
+                    ></div>
+                  </div>
+                  <span class="w-8 text-right text-slate-400 font-bold"
+                    >96%</span
+                  >
+                </div>
+                <div class="flex items-center gap-3">
+                  <span class="w-12 text-slate-400 font-medium">4 star</span>
+                  <div
+                    class="flex-1 h-2 rounded-full bg-slate-800 overflow-hidden"
+                  >
+                    <div
+                      class="h-full bg-amber-400/80 rounded-full"
+                      style="width: 4%"
+                    ></div>
+                  </div>
+                  <span class="w-8 text-right text-slate-400 font-bold"
+                    >4%</span
+                  >
+                </div>
+                <div class="flex items-center gap-3">
+                  <span class="w-12 text-slate-400 font-medium">3 star</span>
+                  <div
+                    class="flex-1 h-2 rounded-full bg-slate-800 overflow-hidden"
+                  >
+                    <div
+                      class="h-full bg-amber-400/20 rounded-full"
+                      style="width: 0%"
+                    ></div>
+                  </div>
+                  <span class="w-8 text-right text-slate-500 font-bold"
+                    >0%</span
+                  >
+                </div>
+                <div class="flex items-center gap-3">
+                  <span class="w-12 text-slate-400 font-medium">2 star</span>
+                  <div
+                    class="flex-1 h-2 rounded-full bg-slate-800 overflow-hidden"
+                  >
+                    <div
+                      class="h-full bg-amber-400/20 rounded-full"
+                      style="width: 0%"
+                    ></div>
+                  </div>
+                  <span class="w-8 text-right text-slate-500 font-bold"
+                    >0%</span
+                  >
+                </div>
+                <div class="flex items-center gap-3">
+                  <span class="w-12 text-slate-400 font-medium">1 star</span>
+                  <div
+                    class="flex-1 h-2 rounded-full bg-slate-800 overflow-hidden"
+                  >
+                    <div
+                      class="h-full bg-amber-400/20 rounded-full"
+                      style="width: 0%"
+                    ></div>
+                  </div>
+                  <span class="w-8 text-right text-slate-500 font-bold"
+                    >0%</span
+                  >
+                </div>
+              </div>
+
+              <!-- Right: Top Client Mentions on Google -->
+              <div class="lg:col-span-4 space-y-2.5">
+                <span
+                  class="text-xs uppercase font-bold text-slate-400 tracking-wider block"
+                  >Top Client Mentions:</span
+                >
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="px-3 py-1 rounded-full text-xs bg-slate-900 border border-slate-700 text-slate-200 font-medium flex items-center gap-1.5"
+                  >
+                    <i
+                      class="fa-solid fa-shield-halved text-cyan-400 text-[10px]"
+                    ></i>
+                    Trustworthy <strong class="text-cyan-400">6</strong>
+                  </span>
+                  <span
+                    class="px-3 py-1 rounded-full text-xs bg-slate-900 border border-slate-700 text-slate-200 font-medium flex items-center gap-1.5"
+                  >
+                    <i
+                      class="fa-solid fa-chart-line text-purple-400 text-[10px]"
+                    ></i>
+                    Digital Marketing <strong class="text-purple-400">4</strong>
+                  </span>
+                  <span
+                    class="px-3 py-1 rounded-full text-xs bg-slate-900 border border-slate-700 text-slate-200 font-medium flex items-center gap-1.5"
+                  >
+                    <i class="fa-solid fa-heart text-pink-400 text-[10px]"></i>
+                    Good Behaviour <strong class="text-pink-400">4</strong>
+                  </span>
+                  <span
+                    class="px-3 py-1 rounded-full text-xs bg-slate-900 border border-slate-700 text-slate-200 font-medium flex items-center gap-1.5"
+                  >
+                    <i class="fa-solid fa-bolt text-amber-400 text-[10px]"></i>
+                    Quality Work <strong class="text-amber-400">3</strong>
+                  </span>
+                  <span
+                    class="px-3 py-1 rounded-full text-xs bg-slate-900 border border-slate-700 text-slate-200 font-medium flex items-center gap-1.5"
+                  >
+                    <i
+                      class="fa-solid fa-handshake-angle text-emerald-400 text-[10px]"
+                    ></i>
+                    Very Helpful <strong class="text-emerald-400">2</strong>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Filter Tabs for Google Reviews -->
+          <div class="flex flex-wrap items-center justify-center gap-2 mb-8">
+            <button
+              onclick="filterGoogleReviews('all', this)"
+              class="review-tab-btn active px-4 py-2 rounded-xl text-xs font-bold bg-cyan-400 text-slate-950 transition-all"
+            >
+              All Reviews (20+)
+            </button>
+            <button
+              onclick="filterGoogleReviews('local-guide', this)"
+              class="review-tab-btn px-4 py-2 rounded-xl text-xs font-semibold bg-slate-900 text-slate-400 hover:text-white transition-all"
+            >
+              Google Local Guides
+            </button>
+            <button
+              onclick="filterGoogleReviews('youtube', this)"
+              class="review-tab-btn px-4 py-2 rounded-xl text-xs font-semibold bg-slate-900 text-slate-400 hover:text-white transition-all"
+            >
+              YouTube &amp; Video Art
+            </button>
+            <button
+              onclick="filterGoogleReviews('marketing', this)"
+              class="review-tab-btn px-4 py-2 rounded-xl text-xs font-semibold bg-slate-900 text-slate-400 hover:text-white transition-all"
+            >
+              Digital Marketing &amp; Brand
+            </button>
+            <button
+              onclick="filterGoogleReviews('fast', this)"
+              class="review-tab-btn px-4 py-2 rounded-xl text-xs font-semibold bg-slate-900 text-slate-400 hover:text-white transition-all"
+            >
+              Super Fast Service
+            </button>
+          </div>
+
+          <!-- Reviews Dynamic Grid -->
+          <div
+            id="google-reviews-grid"
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          >
+            <!-- Populated by reviews-data.js -->
+          </div>
+
+          <!-- View All / Google Link Bottom Strip -->
+          <div class="mt-10 text-center space-y-3">
+            <button
+              id="btn-toggle-all-reviews"
+              onclick="toggleGoogleReviewsView()"
+              class="px-6 py-3 rounded-xl text-xs font-bold btn-secondary-action inline-flex items-center gap-2"
+            >
+              <i class="fa-solid fa-list-check text-cyan-400"></i>
+              <span id="toggle-reviews-text">Show All 20+ Google Reviews</span>
+            </button>
+            <p class="text-xs text-slate-500">
+              Official profile:
+              <a
+                href="https://share.google/KetARk5s5CUDVXaoO"
+                target="_blank"
+                class="text-cyan-400 hover:underline"
+                >Osca India Political Social Media Manager &amp; Advisor on
+                Google</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ======================================================== -->
+    <!-- PROFESSIONAL FOOTER WITH DETAILED COPYRIGHT              -->
+    <!-- ======================================================== -->
+    <footer
+      class="border-t border-slate-800/80 bg-[#050810] pt-12 sm:pt-16 pb-36 xl:pb-12 relative z-20"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 sm:gap-10 pb-10 border-b border-slate-800/60"
+        >
+          <div class="sm:col-span-2 lg:col-span-2 space-y-4">
+            <a href="index.html" class="flex items-center gap-2.5">
+              <div
+                class="w-9 h-9 rounded-xl bg-gradient-to-tr from-cyan-400 via-sky-500 to-purple-600 flex items-center justify-center font-black text-black"
+              >
+                <i class="fa-solid fa-pen-nib text-slate-950"></i>
+              </div>
+              <span
+                class="text-xl font-black font-display tracking-tight text-white"
+                >OSCA <span class="text-cyan-400">INDIA</span></span
+              >
+            </a>
+            <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+              India's dedicated visual design and creative agency. Specializing
+              in high-engagement social media creatives, high-CTR YouTube
+              thumbnails, vector logo branding, and print media.
+            </p>
+            <div class="flex items-center gap-3 text-slate-400 text-sm pt-1">
+              <a
+                href="https://wa.me/916200177076"
+                target="_blank"
+                class="w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center hover:text-emerald-400 transition-colors"
+                title="WhatsApp"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+              <a
+                href="tel:+916200177076"
+                class="w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center hover:text-cyan-400 transition-colors"
+                title="Call"
+                ><i class="fa-solid fa-phone"></i
+              ></a>
+              <a
+                href="mailto:support@oscaindia.com"
+                class="w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center hover:text-white transition-colors"
+                title="Email"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <h4 class="text-xs font-bold uppercase tracking-wider text-white">
+              Pages
+            </h4>
+            <ul class="space-y-2 text-xs text-slate-400">
+              <li>
+                <a
+                  href="index.html"
+                  class="hover:text-cyan-400 transition-colors"
+                  >Home Page</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="hover:text-cyan-400 transition-colors"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  class="hover:text-cyan-400 transition-colors"
+                  >All Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#google-reviews"
+                  class="hover:text-amber-400 transition-colors flex items-center gap-1.5"
+                  ><i
+                    class="fa-brands fa-google text-[11px] text-amber-400"
+                  ></i>
+                  Google Reviews (4.9★)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="hover:text-cyan-400 transition-colors"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="space-y-3">
+            <h4 class="text-xs font-bold uppercase tracking-wider text-white">
+              Offerings
+            </h4>
+            <ul class="space-y-2 text-xs text-slate-400">
+              <li>
+                <a
+                  href="services.html"
+                  class="hover:text-cyan-400 transition-colors"
+                  >Instagram Posters</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  class="hover:text-cyan-400 transition-colors"
+                  >YouTube Thumbnails</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  class="hover:text-cyan-400 transition-colors"
+                  >Minimalist Logos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  class="hover:text-cyan-400 transition-colors"
+                  >Festival Creatives</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  class="hover:text-cyan-400 transition-colors"
+                  >Brand Style Guides</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="sm:col-span-2 lg:col-span-1 space-y-3">
+            <h4 class="text-xs font-bold uppercase tracking-wider text-white">
+              Studio Line
+            </h4>
+            <div class="text-xs text-slate-400 space-y-1.5">
+              <p>
+                Hotline:
+                <a
+                  href="tel:+916200177076"
+                  class="text-white font-bold hover:text-cyan-400"
+                  >Call Helpline</a
+                >
+              </p>
+              <p>
+                WhatsApp:
+                <a
+                  href="https://wa.me/916200177076"
+                  target="_blank"
+                  class="text-emerald-400 font-bold hover:underline"
+                  >Chat on WhatsApp</a
+                >
+              </p>
+              <p>
+                Google Profile:
+                <a
+                  href="https://share.google/KetARk5s5CUDVXaoO"
+                  target="_blank"
+                  class="text-amber-400 font-bold hover:underline"
+                  >4.9 ★★★★★ (38+)</a
+                >
+              </p>
+              <p>
+                Email: <span class="text-white">support@oscaindia.com</span>
+              </p>
+            </div>
+            <a
+              href="tel:+916200177076"
+              class="inline-block mt-2 px-3.5 py-1.5 rounded-lg text-[11px] font-bold bg-cyan-400 text-slate-950 hover:bg-cyan-300 transition-colors"
+              >Call Now</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500"
+        >
+          <div>
+            &copy; 2026
+            <strong class="text-slate-300"
+              >OSCA INDIA Graphic Design Studio</strong
+            >. All rights reserved. Registered under Creative Media India.
+          </div>
+          <div class="flex items-center gap-4 text-[11px]">
+            <span>Pan-India &bull; Express Turnaround</span>
+            <span>&bull;</span>
+            <span>100% Satisfaction Guarantee</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ======================================================== -->
+    <!-- CART DRAWER COMPONENT                                    -->
+    <!-- ======================================================== -->
+    <div
+      id="cart-backdrop"
+      class="drawer-backdrop fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-[900] opacity-0 pointer-events-none"
+    ></div>
+
+    <div
+      id="cart-drawer"
+      class="drawer-panel fixed top-0 right-0 bottom-0 w-full sm:w-[440px] bg-[#090d16] border-l border-slate-800 z-[950] translate-x-full flex flex-col shadow-2xl overflow-hidden"
+    >
+      <div
+        class="p-4 border-b border-slate-800 flex items-center justify-between bg-slate-900/50"
+      >
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-bag-shopping text-cyan-400"></i>
+          <h3 class="text-sm font-bold text-white">
+            Your Design Cart (OSCA INDIA)
+          </h3>
+        </div>
+        <div class="flex items-center gap-2">
+          <button
+            type="button"
+            onclick="App.clearCart()"
+            class="px-2.5 py-1 rounded-lg text-[11px] font-bold text-slate-400 hover:text-red-400 hover:bg-slate-800 transition-colors flex items-center gap-1.5"
+            title="Reset Cart"
+          >
+            <i class="fa-solid fa-rotate-left text-xs"></i>
+            <span>Reset</span>
+          </button>
+          <button
+            id="btn-close-cart"
+            class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white flex items-center justify-center transition-colors"
+          >
+            <i class="fa-solid fa-xmark text-sm"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="flex-1 overflow-y-auto p-4 space-y-4">
+        <div id="cart-items-list" class="space-y-2.5"></div>
+
+        <div id="cart-empty-state" class="py-16 text-center space-y-3">
+          <i class="fa-solid fa-cart-shopping text-3xl text-slate-600"></i>
+          <h4 class="text-sm font-bold text-white">Your cart is empty</h4>
+          <p class="text-xs text-slate-400">Add services from our catalog.</p>
+        </div>
+
+        <div id="cart-footer" class="space-y-4 hidden">
+          <div class="flex gap-2">
+            <input
+              id="coupon-code"
+              type="text"
+              placeholder="Coupon (e.g. OSCA10)"
+              class="flex-1 bg-slate-900 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white uppercase focus:outline-none focus:border-cyan-400"
+            />
+            <button
+              id="btn-apply-coupon"
+              type="button"
+              class="px-4 py-2 rounded-xl text-xs font-bold bg-cyan-400 text-slate-950"
+            >
+              Apply
+            </button>
+          </div>
+
+          <div
+            class="p-3.5 rounded-2xl bg-slate-900 border border-slate-800 space-y-2.5"
+          >
+            <h4 class="text-xs font-bold text-white">Client Order Details</h4>
+            <div>
+              <label class="block text-[10px] text-slate-400 mb-0.5"
+                >Your Full Name *</label
+              >
+              <input
+                id="client-name"
+                type="text"
+                required
+                placeholder="e.g. Rahul Verma"
+                class="w-full bg-[#080c14] border border-slate-700 rounded-lg px-3 py-1.5 text-xs text-white focus:outline-none focus:border-cyan-400"
+              />
+            </div>
+            <div>
+              <label class="block text-[10px] text-slate-400 mb-0.5"
+                >Phone / WhatsApp Number *</label
+              >
+              <input
+                id="client-phone"
+                type="tel"
+                required
+                placeholder="e.g. 9876543210"
+                class="w-full bg-[#080c14] border border-slate-700 rounded-lg px-3 py-1.5 text-xs text-white focus:outline-none focus:border-cyan-400"
+              />
+            </div>
+            <div>
+              <label class="block text-[10px] text-slate-400 mb-0.5"
+                >Brand / Channel Name</label
+              >
+              <input
+                id="client-brand"
+                type="text"
+                placeholder="Company or channel name"
+                class="w-full bg-[#080c14] border border-slate-700 rounded-lg px-3 py-1.5 text-xs text-white focus:outline-none focus:border-cyan-400"
+              />
+            </div>
+            <div>
+              <label class="block text-[10px] text-slate-400 mb-0.5"
+                >Project Instructions / Notes</label
+              >
+              <textarea
+                id="client-notes"
+                rows="2"
+                placeholder="Design colors, theme, or idea..."
+                class="w-full bg-[#080c14] border border-slate-700 rounded-lg px-3 py-1.5 text-xs text-white focus:outline-none focus:border-cyan-400"
+              ></textarea>
+            </div>
+          </div>
+
+          <div
+            class="p-3.5 rounded-xl bg-slate-900 border border-slate-800 space-y-1.5 text-xs"
+          >
+            <div class="flex justify-between text-slate-400">
+              <span>Subtotal:</span>
+              <span id="cart-subtotal" class="font-bold text-white">₹0</span>
+            </div>
+            <div
+              id="cart-discount-row"
+              class="flex justify-between text-emerald-400 hidden"
+            >
+              <span>Discount:</span>
+              <span id="cart-discount" class="font-bold">-₹0</span>
+            </div>
+            <div
+              class="pt-1.5 border-t border-slate-800 flex justify-between text-sm font-bold text-white"
+            >
+              <span>Total Payable:</span>
+              <span
+                id="cart-total"
+                class="text-lg font-black text-cyan-400 font-display"
+                >₹0</span
+              >
+            </div>
+          </div>
+
+          <div class="space-y-2">
+            <button
+              id="btn-whatsapp-order"
+              type="button"
+              class="w-full py-3 rounded-xl text-xs font-bold btn-whatsapp-action flex items-center justify-center gap-2"
+            >
+              <i class="fa-brands fa-whatsapp text-base"></i>
+              <span>Send Order via WhatsApp</span>
+            </button>
+
+            <button
+              id="btn-download-pdf"
+              type="button"
+              class="w-full py-2.5 rounded-xl text-xs font-bold btn-primary-action flex items-center justify-center gap-2"
+            >
+              <i class="fa-solid fa-file-pdf"></i>
+              <span>Download Official PDF Bill</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div
+      id="success-modal"
+      class="fixed inset-0 bg-slate-950/85 backdrop-blur-md z-[1000] hidden items-center justify-center p-4"
+    >
+      <div
+        class="glass-card p-6 sm:p-8 rounded-3xl border border-cyan-400/30 max-w-md w-full text-center space-y-4"
+      >
+        <div
+          class="w-12 h-12 rounded-full bg-emerald-400/20 text-emerald-400 mx-auto flex items-center justify-center text-xl"
+        >
+          <i class="fa-solid fa-check"></i>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-white font-display">
+            Order Registered!
+          </h3>
+          <p class="text-xs text-slate-300 mt-1">
+            Thank you
+            <span id="modal-client-name" class="font-bold text-cyan-400"
+              >Client</span
+            >. Your design order is confirmed.
+          </p>
+        </div>
+        <div
+          class="p-3.5 rounded-xl bg-slate-900 border border-slate-800 text-left space-y-1.5 text-xs"
+        >
+          <div class="flex justify-between">
+            <span class="text-slate-400">Order ID:</span>
+            <span id="modal-order-id" class="font-bold text-white font-mono"
+              >OSCA-ORD-XXXX</span
+            >
+          </div>
+          <div class="flex justify-between">
+            <span class="text-slate-400">Total:</span>
+            <span
+              id="modal-order-amount"
+              class="font-bold text-cyan-400 font-display"
+              >₹0</span
+            >
+          </div>
+          <div class="flex justify-between">
+            <span class="text-slate-400">Payment:</span>
+            <span class="font-bold text-emerald-400">WhatsApp Confirmation</span>
+          </div>
+        </div>
+        <div class="space-y-2">
+          <a
+            id="modal-btn-whatsapp"
+            href="#"
+            target="_blank"
+            class="w-full py-2.5 rounded-xl text-xs font-bold btn-whatsapp-action flex items-center justify-center gap-2"
+          >
+            <i class="fa-brands fa-whatsapp text-base"></i>
+            <span>Confirm on WhatsApp</span>
+          </a>
+          <button
+            id="modal-btn-download-pdf"
+            type="button"
+            class="w-full py-2.5 rounded-xl text-xs font-bold btn-primary-action flex items-center justify-center gap-2"
+          >
+            <i class="fa-solid fa-file-pdf"></i>
+            <span>Re-Download PDF Bill</span>
+          </button>
+          <button
+            onclick="
+              document.getElementById('success-modal').classList.add('hidden');
+              document.getElementById('success-modal').classList.remove('flex');
+            "
+            class="w-full py-1.5 text-xs text-slate-400 hover:text-white"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================================================== -->
+    <!-- MOBILE & TABLET BOTTOM NAVIGATION DOCK (UP TO 12 INCH)   -->
+    <!-- ======================================================== -->
+    <nav
+      class="mobile-bottom-nav xl:hidden"
+      aria-label="Mobile and Tablet Bottom Navigation"
+    >
+      <a href="index.html" class="mobile-nav-item active" id="mob-nav-home">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+      </a>
+      <a href="services.html" class="mobile-nav-item" id="mob-nav-services">
+        <i class="fa-solid fa-layer-group"></i>
+        <span>Services</span>
+      </a>
+      <a href="#google-reviews" class="mobile-nav-item" id="mob-nav-reviews">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+          alt="Google"
+          class="w-4 h-4"
+        />
+        <span>4.9 ★</span>
+      </a>
+      <a href="about.html" class="mobile-nav-item" id="mob-nav-about">
+        <i class="fa-solid fa-circle-info"></i>
+        <span>About</span>
+      </a>
+      <!-- Add to Cart (Placed in Bottom Nav in place of Contact) -->
+      <button
+        type="button"
+        class="btn-open-cart mobile-nav-item relative bg-transparent border-0 cursor-pointer"
+        id="mob-nav-cart"
+        aria-label="Open Cart"
+        title="View Cart"
+      >
+        <div class="relative flex items-center justify-center">
+          <i class="fa-solid fa-cart-shopping text-base text-cyan-400"></i>
+          <span
+            class="cart-count-badge hidden absolute -top-1.5 -right-2.5 w-4 h-4 rounded-full bg-cyan-400 text-slate-950 text-[9px] font-black flex items-center justify-center shadow-md"
+          >
+            0
+          </span>
+        </div>
+        <span>Cart</span>
+      </button>
+    </nav>
+
+    <!-- Floating Action Buttons (Docked Directly Above Mobile Bottom Nav) -->
+    <div class="floating-actions" aria-label="Quick Contact Actions">
+      <a
+        href="tel:+916200177076"
+        class="floating-btn floating-btn-call"
+        title="Direct Call"
+        aria-label="Call Studio"
+      >
+        <i class="fa-solid fa-phone text-base"></i>
+      </a>
+      <a
+        href="https://wa.me/916200177076?text=Hi%20OSCA%20India%2C%20I%20want%20to%20order%20graphic%20designs."
+        target="_blank"
+        class="floating-btn btn-whatsapp-action"
+        title="Chat on WhatsApp"
+        aria-label="Chat on WhatsApp"
+      >
+        <i class="fa-brands fa-whatsapp text-2xl"></i>
+      </a>
+    </div>
+
+    <!-- Scripts (Flat Single-Folder Connected) -->
+    <script src="reviews-data.js"></script>
+    <script src="invoice.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
