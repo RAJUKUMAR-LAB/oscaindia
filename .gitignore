@@ -1,0 +1,23 @@
+# Sensitive Customer & Transaction Data
+orders.json
+inquiries.json
+uploads/
+*.log
+
+# Environment & Private Keys
+.env
+.env.*
+*.secret
+
+# Python & System Caches
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.venv/
+env/
+
+# OS Metadata
+.DS_Store
+Thumbs.db
+

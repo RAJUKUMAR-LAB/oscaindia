@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- Homepage: OSCA INDIA Graphic Design Studio -->
+  <url>
+    <loc>https://oscaindia.com/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://lh3.googleusercontent.com/d/1lE8_S_VYTuZnV7byEIFJiisUi4FoaE-e</image:loc>
+      <image:title>OSCA INDIA Official Studio Logo</image:title>
+      <image:caption>OSCA INDIA Graphic Design and Political Social Media Studio Bhairo Kothi Sitamarhi</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://lh3.googleusercontent.com/d/19vkOWVbjJSadL1HFDbXy6BENVS5B0oht</image:loc>
+      <image:title>OSCA INDIA Highway Billboard Sitamarhi Bihar</image:title>
+      <image:caption>Outdoor highway billboard advertising OSCA INDIA studio at Bhairo Kothi, Sitamarhi, Bihar</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://lh3.googleusercontent.com/d/1HYizpqESuTRWCulCaACL8Jbk-Wti2QVx</image:loc>
+      <image:title>OSCA INDIA Studio Reception and Biophilic Interior</image:title>
+      <image:caption>Official studio floor and reception at Bhairo Kothi, Sitamarhi, Bihar 843302</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://lh3.googleusercontent.com/d/11RGcWS_YPUp6pyg8kGzOhNLHeYnYes7x</image:loc>
+      <image:title>Political Leader Daily Poster Design</image:title>
+      <image:caption>High impact 1080x1350 HD political poster creative</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Services: All Graphic Design & Retainer Management Services -->
+  <url>
+    <loc>https://oscaindia.com/services</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://lh3.googleusercontent.com/d/1kP5aCWlWIFyd4phPhY-pGpieDEDltD-U</image:loc>
+      <image:title>Election Campaign and Rally Master Poster</image:title>
+      <image:caption>High energy election campaign and rally poster design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://lh3.googleusercontent.com/d/1yeQhWyQO2a2EUD-Z8RFQB6lN56HImVdF</image:loc>
+      <image:title>Festival and Jayanti Political Greeting Poster</image:title>
+      <image:caption>Festive and national day social media poster creative</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://lh3.googleusercontent.com/d/1RNnpYR3WSpTT-tW1apYBDB0AKrGztle0</image:loc>
+      <image:title>High-CTR YouTube Political and Viral Thumbnail</image:title>
+      <image:caption>1280x720 click-through rate optimized YouTube thumbnail</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://lh3.googleusercontent.com/d/14LIUgKeQj2FSihH925YM0EqqOLcA_CZg</image:loc>
+      <image:title>Viral Reel and Shorts Vertical Cover Art</image:title>
+      <image:caption>9:16 mobile optimized Instagram reel and YouTube short cover</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://lh3.googleusercontent.com/d/1F3j7PQBY1ebflS7n8cigAIkUErM5YUe5</image:loc>
+      <image:title>Official Press Statement and Media Banner Design</image:title>
+      <image:caption>Authoritative press statement graphic for official briefings</image:caption>
+    </image:image>
+  </url>
+
+  <!-- About Us: Company Background, Mission, Design Team & Infrastructure -->
+  <url>
+    <loc>https://oscaindia.com/about</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://lh3.googleusercontent.com/d/1ZcrDz4uFVJdxQYKS_CQheuLq5fHBNlgK</image:loc>
+      <image:title>OSCA INDIA Corporate Studio Corridor</image:title>
+      <image:caption>Bhairo Kothi, Sitamarhi Bihar executive design suite and workstations</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Contact Us: Studio Helpline, WhatsApp, Address, Google Reviews -->
+  <url>
+    <loc>https://oscaindia.com/contact</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://lh3.googleusercontent.com/d/1HYizpqESuTRWCulCaACL8Jbk-Wti2QVx</image:loc>
+      <image:title>OSCA INDIA Headquarters Reception Desk</image:title>
+      <image:caption>Creative reception and client consultation desk at Bhairo Kothi, Sitamarhi, Bihar 843302</image:caption>
+    </image:image>
+  </url>
+</urlset>

@@ -1,0 +1,9 @@
+# Security Policy & Vulnerability Disclosure for OSCA INDIA
+# RFC 9116 Standard
+
+Contact: mailto:kumar2121sunil@gmail.com
+Expires: 2027-11-17T00:00:00.000Z
+Preferred-Languages: en, hi
+Canonical: https://oscaindia.com/security.txt
+Policy: https://oscaindia.com/contact
+Acknowledgments: https://oscaindia.com/about

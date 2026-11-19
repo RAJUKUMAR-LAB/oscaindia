@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 — Page Not Found | OSCA INDIA</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="The page you are looking for does not exist on OSCA INDIA. Explore our graphic design services, political posters, YouTube thumbnails, and logo packages." />
+    
+    <!-- Unified Production CSS (Zero Runtime Overhead, Zero Blocking Delay) -->
+    <link rel="stylesheet" href="main.min.css?v=2.6" />
+
+    <!-- Google Fonts & Font Awesome 6 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- Critical Font Awesome Webfonts Preload for Zero Layout/Display Delay -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin />
+
+    <!-- Official Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="https://lh3.googleusercontent.com/d/1lE8_S_VYTuZnV7byEIFJiisUi4FoaE-e=w64" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://lh3.googleusercontent.com/d/1lE8_S_VYTuZnV7byEIFJiisUi4FoaE-e=w32" />
+    <link rel="icon" type="image/x-icon" href="https://lh3.googleusercontent.com/d/1lE8_S_VYTuZnV7byEIFJiisUi4FoaE-e=w64" />
+    <link rel="shortcut icon" href="https://lh3.googleusercontent.com/d/1lE8_S_VYTuZnV7byEIFJiisUi4FoaE-e=w64" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://lh3.googleusercontent.com/d/1lE8_S_VYTuZnV7byEIFJiisUi4FoaE-e=w180" />
+
+    <!-- Immediate Theme Loader -->
+    <script>
+      (function () {
+        try {
+          const params = new URLSearchParams(window.location.search);
+          const queryTheme = params.get("theme");
+          if (queryTheme === "light" || queryTheme === "dark") {
+            localStorage.setItem("osca_theme", queryTheme);
+            document.documentElement.classList.toggle("light", queryTheme === "light");
+            return;
+          }
+          const saved = localStorage.getItem("osca_theme");
+          if (saved === "light") {
+            document.documentElement.classList.add("light");
+          } else {
+            document.documentElement.classList.remove("light");
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+
+  <body class="bg-[#070a12] text-slate-100 font-sans antialiased min-h-screen flex flex-col justify-between">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-[#070a12]/90 backdrop-blur-md border-b border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="https://lh3.googleusercontent.com/d/1bLOFSbhyMDfQRoz8k_ujPbw_pZ3gLuT-" alt="OSCA INDIA" class="h-9 w-auto object-contain studio-brand-logo" />
+          <div class="flex flex-col">
+            <span class="text-sm font-extrabold tracking-wider text-white">OSCA <span class="text-cyan-400">INDIA</span></span>
+            <span class="text-[9px] uppercase font-bold text-slate-400 tracking-widest">Design Studio</span>
+          </div>
+        </a>
+        <div class="flex items-center gap-3">
+          <button id="theme-toggle" class="w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-cyan-400" aria-label="Toggle Theme">
+            <i class="fa-solid fa-sun text-sm"></i>
+          </button>
+          <a href="https://wa.me/916200177076" target="_blank" class="px-3.5 py-1.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs flex items-center gap-1.5 transition-all">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="hidden sm:inline">WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main 404 Hero -->
+    <main class="flex-1 flex items-center justify-center px-4 py-16 sm:py-24 relative z-10">
+      <div class="max-w-xl mx-auto text-center space-y-6">
+        <!-- Error Pill -->
+        <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-500/10 border border-red-500/30 text-red-400 text-xs font-bold uppercase tracking-wider">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          <span>Error 404 &bull; Page Not Found</span>
+        </span>
+
+        <h1 class="text-6xl sm:text-8xl font-black font-display text-white tracking-tight">
+          4<span class="text-cyan-400">0</span>4
+        </h1>
+
+        <p class="text-base sm:text-lg text-slate-300 max-w-md mx-auto leading-relaxed">
+          The link you followed may be broken, or the page has been moved. Discover our graphic design catalog and political marketing services below.
+        </p>
+
+        <!-- Quick Links Buttons -->
+        <div class="flex flex-wrap items-center justify-center gap-3 pt-2">
+          <a href="index.html" class="px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 font-bold text-xs sm:text-sm shadow-lg shadow-cyan-500/20 active:scale-95 transition-all flex items-center gap-2">
+            <i class="fa-solid fa-house"></i>
+            <span>Return to Home</span>
+          </a>
+          <a href="services.html" class="px-6 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-cyan-400 border border-slate-700 font-bold text-xs sm:text-sm active:scale-95 transition-all flex items-center gap-2">
+            <i class="fa-solid fa-layer-group"></i>
+            <span>Explore All Services</span>
+          </a>
+          <a href="contact.html" class="px-6 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-white border border-slate-800 font-bold text-xs sm:text-sm active:scale-95 transition-all flex items-center gap-2">
+            <i class="fa-solid fa-headset"></i>
+            <span>Contact Studio</span>
+          </a>
+        </div>
+
+        <!-- Directory Helper Card -->
+        <div class="glass-card p-5 rounded-2xl border border-slate-800 text-left space-y-3 mt-8">
+          <h2 class="text-xs font-bold uppercase tracking-wider text-slate-400 flex items-center gap-2">
+            <i class="fa-solid fa-compass text-cyan-400"></i>
+            <span>Popular Design Offerings</span>
+          </h2>
+          <div class="grid grid-cols-2 gap-2 text-xs text-slate-300">
+            <a href="services.html" class="p-2 rounded-lg bg-slate-900/60 hover:bg-slate-800/80 hover:text-cyan-400 flex items-center gap-2 transition-colors">
+              <i class="fa-solid fa-flag text-cyan-400 text-[10px]"></i>
+              <span>Political Posters</span>
+            </a>
+            <a href="services.html" class="p-2 rounded-lg bg-slate-900/60 hover:bg-slate-800/80 hover:text-cyan-400 flex items-center gap-2 transition-colors">
+              <i class="fa-brands fa-youtube text-red-400 text-[10px]"></i>
+              <span>YouTube Thumbnails</span>
+            </a>
+            <a href="https://www.instagram.com/political_social_media_advisor?hvrq=MXg4OG92ejNtbDAwOQ==" target="_blank" rel="noopener" class="p-2 rounded-lg bg-slate-900/60 hover:bg-slate-800/80 hover:text-cyan-400 flex items-center gap-2 transition-colors" title="OSCA INDIA Official Instagram (@political_social_media_advisor)">
+              <i class="fa-brands fa-instagram text-pink-400 text-[10px]"></i>
+              <span>Instagram (@political_social_media_advisor)</span>
+            </a>
+            <a href="services.html#monthly-plans" class="p-2 rounded-lg bg-slate-900/60 hover:bg-slate-800/80 hover:text-cyan-400 flex items-center gap-2 transition-colors">
+              <i class="fa-solid fa-crown text-amber-400 text-[10px]"></i>
+              <span>Monthly Retainer Plans</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-6 border-t border-slate-900 text-center text-xs text-slate-500">
+      <div class="max-w-7xl mx-auto px-4">
+        &copy; 2026 OSCA INDIA Graphic Design Studio &bull; Bhairo Kothi, Sitamarhi, Bihar 843302 &bull; <a href="https://oscaindia.com" class="text-cyan-400 hover:underline">oscaindia.com</a>
+      </div>
+    </footer>
+
+    <!-- Theme Logic -->
+    <script>
+      const btnTheme = document.getElementById("theme-toggle");
+      if (btnTheme) {
+        btnTheme.addEventListener("click", () => {
+          const isLight = document.documentElement.classList.toggle("light");
+          localStorage.setItem("osca_theme", isLight ? "light" : "dark");
+          btnTheme.innerHTML = isLight ? '<i class="fa-solid fa-moon text-sm"></i>' : '<i class="fa-solid fa-sun text-sm"></i>';
+        });
+      }
+    </script>
+  </body>
+</html>

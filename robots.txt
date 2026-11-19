@@ -1,0 +1,18 @@
+# Robots.txt for OSCA INDIA
+# Website: https://oscaindia.com/
+# Studio: Bhairo Kothi, Sitamarhi, Bihar 843302, India
+
+User-agent: *
+Allow: /
+Disallow: /uploads/
+Disallow: /*?*theme=*
+Disallow: /*?*cart=*
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
+
+# Canonical Host
+Host: oscaindia.com
+
+# XML Sitemap
+Sitemap: https://oscaindia.com/sitemap.xml
