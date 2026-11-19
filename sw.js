@@ -1,4 +1,4 @@
-const CACHE_NAME = 'oscaindia-v1';
+const CACHE_NAME = 'oscaindia-v2';
 const STATIC_ASSETS = [
   './',
   './index.html',
@@ -38,9 +38,11 @@ self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
   const url = new URL(event.request.url);
 
-  // Cache same-origin assets, Google Fonts, and Font Awesome webfonts
+  // Cache same-origin assets, Google Drive CDN images, Google Fonts, and Font Awesome webfonts
   const isCachable = 
     url.origin === location.origin ||
+    url.hostname.includes('lh3.googleusercontent.com') ||
+    url.hostname.includes('upload.wikimedia.org') ||
     url.hostname.includes('cdnjs.cloudflare.com') ||
     url.hostname.includes('fonts.gstatic.com') ||
     url.hostname.includes('fonts.googleapis.com');
@@ -49,14 +51,21 @@ self.addEventListener('fetch', (event) => {
     event.respondWith(
       caches.open(CACHE_NAME).then(async (cache) => {
         const cached = await cache.match(event.request);
-        const fetchPromise = fetch(event.request).then((networkResponse) => {
+        if (cached) {
+          // Serve from cache instantly (0ms) and revalidate in background
+          fetch(event.request).then((networkResponse) => {
+            if (networkResponse && networkResponse.status === 200) {
+              cache.put(event.request, networkResponse.clone());
+            }
+          }).catch(() => {});
+          return cached;
+        }
+        return fetch(event.request).then((networkResponse) => {
           if (networkResponse && networkResponse.status === 200) {
             cache.put(event.request, networkResponse.clone());
           }
           return networkResponse;
         }).catch(() => cached);
-
-        return cached || fetchPromise;
       })
     );
   }
